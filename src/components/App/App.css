@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "YS";
+  src: url("../../../public/YandexSansDisplay-Regular.ttf");
+}
+
 .App {
   text-align: center;
+  font-family: "YS";
 }
 
 .App-logo {
