@@ -1,5 +1,6 @@
 import './App.css';
 import Team from '../Team/Team.js'
+import {Footer} from "../../components/Footer/Footer";
 import {MapSection} from "../MapSection/MapSection";
 import {YMaps} from "@pbe/react-yandex-maps";
 
@@ -10,6 +11,7 @@ function App() {
       <YMaps>
         <Team/>
         <MapSection width='75%'/>
+        <Footer/>
       </YMaps>
     </div>
   );
