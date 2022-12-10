@@ -1,0 +1,50 @@
+.title, .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    margin-bottom: 3rem;
+    height: calc(60% * 0.8);
+}
+
+.title__name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.list {
+    width: fit-content;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.listItem {
+    margin-bottom: 1rem;
+}
+
+.listItem__name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0 0 .5rem;
+    text-align: left;
+}
+
+.listItem__address {
+    color: grey;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.listItem__address_active {
+    color: black;
+}
+
+.listItem__icon {
+    color: #16161A;
+    height: 1.5rem;
+    min-height: 100%;
+    font-weight: 800;
+}

@@ -1,11 +1,16 @@
 import './App.css';
-import Team from '../Team/Team.js'
+import Team from '../Team/Team'
+import {MapSection} from "../MapSection/MapSection";
+import {YMaps} from "@pbe/react-yandex-maps";
 
 
 function App() {
   return (
     <div className="App">
-      <Team/>
+      <YMaps>
+        <Team/>
+        <MapSection width='75%'/>
+      </YMaps>
     </div>
   );
 }
