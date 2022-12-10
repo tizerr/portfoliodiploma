@@ -1,18 +1,19 @@
 import './App.css';
-import Team from '../Team/Team.js'
-import {MapSection} from "../MapSection/MapSection";
-import {YMaps} from "@pbe/react-yandex-maps";
+import Main from '../Main/Main.js'
+import Projects from '../Projects/Projects.js'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 function App() {
   return (
-    <div className="App">
-      <YMaps>
-        <Team/>
-        <MapSection width='75%'/>
-      </YMaps>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route index element={<Main/>}/>
+          <Route path="/projects" element={<Projects/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
