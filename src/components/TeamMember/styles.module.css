@@ -46,5 +46,12 @@
 	color: #85868C;
 }
 
+.socialNetworks {
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin: 0 0 0 3px;
+}
+
 
 

@@ -12,8 +12,16 @@ function TeamMember(props) {
 			</div>
 			<h6 className={styles.title}>
 				{props.fullName}
-				<a href={props.gitHub}><img src="" alt=""/></a>
-				<a href={props.telegram}><img src="" alt=""/></a>
+				<a className={styles.socialNetworks} href={props.gitHub}>
+					<div className={styles.imgBlock}>
+						<img src="img/github-icon.svg" alt=""/>	
+					</div>
+				</a>
+				<a className={styles.socialNetworks} href={props.telegram}>
+					<div className={styles.imgBlock}>				
+						<img src="img/telegram-icon.svg" alt=""/>
+					</div>
+				</a>
 			</h6>
 			<p className={styles.text}>{props.text}</p>
 			<ul className={styles.developmentStack}>
