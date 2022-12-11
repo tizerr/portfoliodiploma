@@ -4,7 +4,7 @@ import {useRef, useState} from 'react'
 import TeamMember from '../TeamMember/TeamMember.js'
 import slideCards from '../../mock/sliderCards.js'
 
-function get_item(obj, id) {
+function getItem(obj, id) {
 	return <TeamMember 
 				imgPath={obj['photo']} 
 				fullName={obj['full-name']}
@@ -75,7 +75,7 @@ function Team(props) {
 	return <div className={styles.slider}>
 			<h1 className={styles.title}>Наша команда</h1>
 			<Slider {...sliderConfigs} ref={sliderRef}>
-				{slideCards.map(get_item)}
+				{slideCards.map(getItem)}
 			</Slider>
 			<div className={styles.line}>
 				<div className={styles.segment} 
