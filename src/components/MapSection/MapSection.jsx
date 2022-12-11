@@ -1,4 +1,4 @@
-import styles from "./MapSection.module.css";
+import styles from "./styles.module.css";
 import { Map, Placemark } from "@pbe/react-yandex-maps";
 import { useEffect, useState } from "react";
 import { members } from "../../mock/mapMembers";
@@ -15,7 +15,7 @@ export const MapSection = (props) => {
 
   const resizeMap = (map) => {
     if (!map) return;
-    map.style.height = (map.offsetWidth * 0.8).toString() + "px";
+    map.style.height = (map.offsetWidth * 0.7).toString() + "px";
   };
 
   useEffect(() => {
@@ -24,10 +24,10 @@ export const MapSection = (props) => {
   }, [map]);
 
   return (
-    <section style={{ width: props.width, margin: "0 auto 0" }}>
+    <section className={styles.mapSection}>
       <div className={styles.title}>
         <h2 className={styles.title__name}>Контактная информация</h2>
-        // Button форма обратной связи
+        //Feedback
       </div>
       <div className={styles.container}>
         <ul className={styles.list}>
@@ -59,7 +59,7 @@ export const MapSection = (props) => {
             </li>
           ))}
         </ul>
-        <div style={{ width: "60%" }} ref={setMap}>
+        <div className={styles.mapDiv} ref={setMap}>
           <Map
             defaultState={{
               center: [55.751574, 37.573856],

@@ -1,18 +1,19 @@
 .header {
 	background: #EBECF0;
+	padding: 0 var(--global-padding);
 }
 
 .header nav {
 	display: flex;
-	flex-direction: start;
+	flex-direction: row;
 }
 
 .link {
 	text-decoration: none;
-	padding: 3px 10px;
+	padding: 3px 0;
+	margin: 15px 30px 15px 0;
 	font-size: 1.1rem;
 	border-bottom: 2px solid black;
-	margin: 10px;
 	transition: all 300ms ease-in-out 0s;
 	color: #16161A;
 }

@@ -8,14 +8,14 @@ function Header(props) {
 
 	return <>
 		<header className={styles.header}>
-				<nav>
-					<Link to="/" className={classnames(styles.link, {[styles.disabled]:!isOnIndex})}>
-						О нас
-					</Link>
-					<Link to="/projects" className={classnames(styles.link, {[styles.disabled]:isOnIndex})}>
-						Проекты
-					</Link>
-				</nav>
+			<nav>
+				<Link to="/" className={classnames(styles.link, {[styles.disabled]:!isOnIndex})}>
+					О нас
+				</Link>
+				<Link to="/projects" className={classnames(styles.link, {[styles.disabled]:isOnIndex})}>
+					Проекты
+				</Link>
+			</nav>
 		</header>
 	 </>
 }

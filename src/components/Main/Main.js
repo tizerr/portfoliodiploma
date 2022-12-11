@@ -5,15 +5,17 @@ import {YMaps} from "@pbe/react-yandex-maps";
 import styles from './styles.module.css'
 
 function Main(props) {
-	return <> 
+	return (
+		<>
 			<Header path="/"/> 
 			<div className={styles.mainBlock}>
 				<YMaps>
-	            	<Team/>
-	            	<MapSection width='75%'/>
-        		</YMaps>
-        	</div>
-	</>
+					<Team/>
+					<MapSection width='100%'/>
+				</YMaps>
+			</div>
+		</>
+	)
 }
 
 export  default Main
