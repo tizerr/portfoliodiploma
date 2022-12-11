@@ -1,6 +1,6 @@
 .block {
 	width: 40vw;
-	margin: 0 3vw;
+	margin: 20px 3vw;
 }
 
 .imgBlock {
@@ -11,14 +11,18 @@
 	display: block;
 	width: 100%;
 	height: auto;
+	border-radius: 5px;
 }
 
 ul {
 	padding-left: 0;
 }
+.developmentStack {
+	display:flex;
+	justify-content:start;
+}
 
 .developmentStack li {
-	display: inline-block;
 	list-style-type: none;
 	padding-right: 5px;
 }
