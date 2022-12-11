@@ -11,7 +11,7 @@ function getDevelopmentStack(val, key) {
 
 function Project(props) {
 
-	return <><div>
+	return <><div className={styles.block}>
 		<div className={styles.imgBlock}>
 			<img src={props.previewPath} alt=""/>
 		</div>

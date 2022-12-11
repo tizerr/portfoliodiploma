@@ -1,11 +1,12 @@
+import Project from '../Project/Project.jsx'
 import Header from '../Header/Header.js'
-import Project from '../Projects/Projects.jsx'
 import projects from '../../mock/projects.js'
 import styles from './styles.module.css'
 
 function getItem(val, key) {
 
 	return <Project
+		key={key}
         previewPath={val['preview-path']}
         name={val['name']}
         developers={val['developers']}
@@ -16,9 +17,8 @@ function getItem(val, key) {
 }
 
 function Projects(props) {
-	console.log(projects)
 	return <>
-			<Header path="/projects"/>
+			<Header path='projects'/>
 			<div className={styles.block}>
 				{projects.map(getItem)}
 			</div>	
