@@ -1,18 +1,18 @@
 import Project from '../Project/Project.jsx'
 import Header from '../Header/Header.js'
-import projects from '../../mock/projects.js'
+import { readyWork } from '../../mock/readyWork.js'
 import styles from './styles.module.css'
 
 function getItem(val, key) {
 
 	return <Project
 		key={key}
-        previewPath={val['preview-path']}
+        previewPath={val['previewPath']}
         name={val['name']}
-        developers={val['developers']}
-        kind={val['kind']}
+        developers={val['author']}
+        kind={val['purpose']}
         description={val['description']}
-        developmentStack={val['development-stack']}
+        developmentStack={val['technology']}
       />
 }
 
@@ -20,7 +20,7 @@ function Projects(props) {
 	return <>
 			<Header path='projects'/>
 			<div className={styles.block}>
-				{projects.map(getItem)}
+				{readyWork.map(getItem)}
 			</div>	
 		</>
 }

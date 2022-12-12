@@ -5,6 +5,8 @@
 
 .imgBlock {
 	width: 100%;
+	height: 50vh;
+	overflow-y: hidden;
 }
 
 .imgBlock img {
