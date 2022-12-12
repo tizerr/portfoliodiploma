@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import Header from '../Header/Header.js'
-
-function Projects(props) {
-	return <Header path="/projects"/>
-=======
 import Project from '../Project/Project.jsx'
 import Header from '../Header/Header.js'
 import projects from '../../mock/projects.js'
@@ -29,7 +23,6 @@ function Projects(props) {
 				{projects.map(getItem)}
 			</div>	
 		</>
->>>>>>> bd2be4dc25426ba8457bffec4ad85b372514fe13
 }
 
 export default Projects
