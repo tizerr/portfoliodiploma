@@ -1,5 +1,4 @@
 import styles from './styles.module.css'
-import classnames from 'classnames'
 
 function getDevelopers(val, key) {
 	return <li className={styles.subTitle} key={key}>{val}</li>
