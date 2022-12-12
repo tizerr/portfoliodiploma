@@ -1,5 +1,9 @@
+p {
+    margin: 5px
+}
+
 .footer {
-    padding: 15px;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
     background: #EBECF0;
