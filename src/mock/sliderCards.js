@@ -1,16 +1,20 @@
 const slideCards = [
 		{
-			"full-name": "Алеша попович",
+			"full-name": "Фазлиев Динар",
 			"photo": "./img/person-photo.png",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ligula vel leo commodo dapibus eu vel justo. Vivamus non odio mauris. Ut ornare tempus tincidunt. Duis quis nibh eget.",
 			"dev-stack": [
 				"HTML",
 				"CSS",
 				"JavaScript",
-				"React"
+				"React",
+				"SCSS",
+				"Python",
+				"BS4",
+				""
 			],
-			"gitHub": "",
-			"telegram": ""
+			"gitHub": "https://github.com/Dinarchak",
+			"telegram": "https://t.me/FazikkD"
 		},
 		{	
 			"full-name": "Никита Васин",
