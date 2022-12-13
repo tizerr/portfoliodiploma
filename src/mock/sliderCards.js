@@ -1,7 +1,7 @@
 const slideCards = [
 		{
 			"full-name": "Алеша попович",
-			"photo": "./img/person-photo.png",
+			"photo": "./person-photo.png",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ligula vel leo commodo dapibus eu vel justo. Vivamus non odio mauris. Ut ornare tempus tincidunt. Duis quis nibh eget.",
 			"dev-stack": [
 				"HTML",
@@ -14,7 +14,7 @@ const slideCards = [
 		},
 		{	
 			"full-name": "Никита Васин",
-			"photo": "./img/person-photo.png",
+			"photo": "./person-photo.png",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ligula vel leo commodo dapibus eu vel justo. Vivamus non odio mauris. Ut ornare tempus tincidunt. Duis quis nibh eget.",
 			"dev-stack": [
 				"HTML",
@@ -27,7 +27,7 @@ const slideCards = [
 		},
 		{
 			"full-name": "Алексей Васькин",
-			"photo": "./img/person-photo.png",
+			"photo": "./person-photo.png",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ligula vel leo commodo dapibus eu vel justo. Vivamus non odio mauris. Ut ornare tempus tincidunt. Duis quis nibh eget.",
 			"dev-stack": [
 				"HTML",
@@ -40,7 +40,7 @@ const slideCards = [
 		},
 		{
 			"full-name": "Алеша попович",
-			"photo": "./img/person-photo.png",
+			"photo": "./person-photo.png",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ligula vel leo commodo dapibus eu vel justo. Vivamus non odio mauris. Ut ornare tempus tincidunt. Duis quis nibh eget.",
 			"dev-stack": [
 				"HTML",
@@ -53,7 +53,7 @@ const slideCards = [
 		},
 		{	
 			"full-name": "Никита Васин",
-			"photo": "./img/person-photo.png",
+			"photo": "./person-photo.png",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ligula vel leo commodo dapibus eu vel justo. Vivamus non odio mauris. Ut ornare tempus tincidunt. Duis quis nibh eget.",
 			"dev-stack": [
 				"HTML",
@@ -66,7 +66,7 @@ const slideCards = [
 		},
 		{
 			"full-name": "Алексей Васькин",
-			"photo": "./img/person-photo.png",
+			"photo": "./person-photo.png",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ligula vel leo commodo dapibus eu vel justo. Vivamus non odio mauris. Ut ornare tempus tincidunt. Duis quis nibh eget.",
 			"dev-stack": [
 				"HTML",
