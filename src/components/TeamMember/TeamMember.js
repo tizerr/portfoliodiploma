@@ -1,4 +1,6 @@
 import styles from "./styles.module.css"
+import telegram from '../../img/telegram-icon.svg'
+import github from '../../img/github-icon.svg'
 
 function get_item(val, id) {
 	return <li className={styles.helpText} key={id}>{val}</li>
@@ -14,12 +16,12 @@ function TeamMember(props) {
 				{props.fullName}
 				<a className={styles.socialNetworks} href={props.gitHub}>
 					<div className={styles.imgBlock}>
-						<img src="img/github-icon.svg" alt=""/>	
+						<img src={github} alt=""/>	
 					</div>
 				</a>
 				<a className={styles.socialNetworks} href={props.telegram}>
 					<div className={styles.imgBlock}>				
-						<img src="img/telegram-icon.svg" alt=""/>
+						<img src={telegram} alt=""/>
 					</div>
 				</a>
 			</h6>
