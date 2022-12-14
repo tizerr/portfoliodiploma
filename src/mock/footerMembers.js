@@ -2,11 +2,11 @@ export const footerMembers = [
     {
         id: 1,
         name: 'Илья Плесский',
-        tel: '***',
-        email: '***', 
+        tel: '+79255345543',
+        email: 'iliya@plessky.ru',
         social: {
-            git: '***',
-            telegram: '***'
+            git: 'https://github.com/tizerr',
+            telegram: 'https://t.me/t1z3rr'
         }
     },
     {

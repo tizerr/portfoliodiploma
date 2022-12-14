@@ -53,4 +53,22 @@ export const readyWork = [
         description: 'В Figma есть множество открытых макетов, для практики в верстке. Эта страница - верстка одного из таких макетов. Вестая этот проект, я научился использовать сторонние JavaScript-библиотеки. Из интересного отмечу наличие графика, воссоздаваемого библиотекой chart.js и несколько слайдеров. ',
         technology: ["HTML", "CSS", "JavaScript", "chart.js", "slick.js"]
     },
+    {
+        previewPath: "../src/img/projects/maket2.png",
+        name: "PracticeHub",
+        link: undefined,
+        author: ["Плесский Илья"],
+        purpose: "Групповой проект",
+        description: 'Сайт, на котором можно создавать и проходить курсы',
+        technology: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        previewPath: "../src/img/projects/maket2.png",
+        name: "Pymogus",
+        link: undefined,
+        author: ["Плесский Илья"],
+        purpose: "Групповой проект",
+        description: 'Копия игры Among Us на python с использованием pygame и socket',
+        technology: ["Python"]
+    },
 ]
