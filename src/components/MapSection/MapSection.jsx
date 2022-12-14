@@ -2,7 +2,12 @@ import styles from "./MapSection.module.css";
 import { Map, Placemark } from "@pbe/react-yandex-maps";
 import { useEffect, useState } from "react";
 import { members } from "../../mock/mapMembers";
+<<<<<<< HEAD
+import placemark from '../../img/placemark.svg'
+import placemarkActive from '../../img/placemarkActive.svg'
+=======
 import { FeedbackModul } from "../FeedbackModul/FeedbackModul"
+>>>>>>> cc8df9b8e255e4def276e70d449f6966df115cb3
 
 export const MapSection = (props) => {
   const [activeMember, setActiveMember] = useState(members[0].id);
@@ -48,11 +53,7 @@ export const MapSection = (props) => {
               >
                 <img
                   className={styles.listItem__icon}
-                  src={`./img/${
-                    m.id === activeMember
-                      ? "placemarkActive.svg"
-                      : "placemark.svg"
-                  }`}
+                  src={m.id === activeMember ? placemarkActive : placemark}
                   alt=""
                 />
                 <div>{m.address.text}</div>
@@ -77,11 +78,12 @@ export const MapSection = (props) => {
                 options={{
                   iconLayout: "default#image",
                   iconImageSize: [50, 50],
-                  iconImageHref: `./img/${
-                    m.id === activeMember
-                      ? "placemarkActive.svg"
-                      : "placemark.svg"
-                  }`
+                  iconImageHref:`${m.id === activeMember ? placemarkActive : placemark}`
+                    // iconImageHref: `./img/${
+                    //   m.id === activeMember
+                    //     ? "placemarkActive.svg"
+                    //     : "placemark.svg"
+                    // }`
                 }}
               />
             ))}
