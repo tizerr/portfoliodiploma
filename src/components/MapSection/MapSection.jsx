@@ -5,6 +5,12 @@ import { members } from "../../mock/mapMembers";
 import placemark from '../../img/placemark.svg'
 import placemarkActive from '../../img/placemarkActive.svg'
 
+import placemark from '../../img/placemark.svg'
+import placemarkActive from '../../img/placemarkActive.svg'
+
+import { FeedbackModul } from "../FeedbackModul/FeedbackModul"
+import classNames from "classnames";
+
 export const MapSection = (props) => {
   const [activeMember, setActiveMember] = useState(members[0].id);
 
@@ -27,9 +33,9 @@ export const MapSection = (props) => {
 
   return (
     <section style={{ width: props.width, margin: "0 auto 0" }}>
-      <div className={styles.title}>
+      <div className={classNames(styles.title, styles.transfer__line)}>
         <h2 className={styles.title__name}>Контактная информация</h2>
-        // Button форма обратной связи
+        <FeedbackModul/>
       </div>
       <div className={styles.container}>
         <ul className={styles.list}>
@@ -74,7 +80,16 @@ export const MapSection = (props) => {
                 options={{
                   iconLayout: "default#image",
                   iconImageSize: [50, 50],
+
                   iconImageHref: m.id === activeMember ? placemarkActive : placemark
+
+                  iconImageHref:`${m.id === activeMember ? placemarkActive : placemark}`
+                    // iconImageHref: `./img/${
+                    //   m.id === activeMember
+                    //     ? "placemarkActive.svg"
+                    //     : "placemark.svg"
+                    // }`
+
                 }}
               />
             ))}

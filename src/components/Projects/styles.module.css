@@ -6,3 +6,12 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
+.showMoreBtn {
+	display: block;
+	margin: 10px auto;
+	padding: 7px;
+	border-radius: 3px;
+	background: #D2D3D9;
+	border: 0;
+}
