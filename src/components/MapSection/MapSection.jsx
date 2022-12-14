@@ -2,8 +2,12 @@ import styles from "./MapSection.module.css";
 import { Map, Placemark } from "@pbe/react-yandex-maps";
 import { useEffect, useState } from "react";
 import { members } from "../../mock/mapMembers";
+<<<<<<< HEAD
 import placemark from '../../img/placemark.svg'
 import placemarkActive from '../../img/placemarkActive.svg'
+=======
+import { FeedbackModul } from "../FeedbackModul/FeedbackModul"
+>>>>>>> cc8df9b8e255e4def276e70d449f6966df115cb3
 
 export const MapSection = (props) => {
   const [activeMember, setActiveMember] = useState(members[0].id);
@@ -29,7 +33,7 @@ export const MapSection = (props) => {
     <section style={{ width: props.width, margin: "0 auto 0" }}>
       <div className={styles.title}>
         <h2 className={styles.title__name}>Контактная информация</h2>
-        // Button форма обратной связи
+        <FeedbackModul/>
       </div>
       <div className={styles.container}>
         <ul className={styles.list}>
