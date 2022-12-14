@@ -2,6 +2,10 @@
     --global-padding: 5rem;
 }
 
+body {
+    background-color: var(--bgMainColor);
+}
+
 @font-face {
   font-family: "YS";
   src: url("../../../public/YandexSansDisplay-Regular.ttf");
@@ -25,5 +29,23 @@
   :root {
     font-size: 0.8rem;
   }
+}
+
+.themeLight {
+  --bgMainColor: white;
+  --bgHeaderColor: #EBECF0;
+  --bgButtonColor: #D2D3D9;
+  --bgTogglerColor: #A2A3AB;
+  --fontMainColor: #16161A;
+  --fontSecondaryColor: #85868C;
+}
+
+.themeDark {
+  --bgMainColor: #16161A;
+  --bgHeaderColor: #222225;
+  --bgButtonColor: #333338;
+  --bgTogglerColor: #3C3C44;
+  --fontMainColor: #E2E2E2;
+  --fontSecondaryColor: #85868C;
 }
 

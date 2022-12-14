@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from './styles.module.css'
 import classnames from 'classnames'
+import {ThemeToggler} from "../ThemeToggler/ThemeToggler";
 
 function Header(props) {
 
@@ -16,6 +17,7 @@ function Header(props) {
 					Проекты
 				</Link>
 			</nav>
+			<ThemeToggler/>
 		</header>
 	 </>
 }

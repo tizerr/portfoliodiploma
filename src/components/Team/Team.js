@@ -60,7 +60,6 @@ function Team(props) {
 		slidesToShow: 3,
     	slidesToScroll: 3,
     	speed: 200,
-    	infinite: false,
     	arrows: true,
     	infinite: true,
     	nextArrow: SampleNextArrow({"styles":styles, "img_path":"../../../next-arrow.svg"}),

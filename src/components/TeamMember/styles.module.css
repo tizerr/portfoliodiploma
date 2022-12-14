@@ -32,18 +32,18 @@
 
 .text {
 	font-size: 1rem;
-	color: #4B4C52;
+	color: var(--fontMainColor);
 }
 
 .title {
 	font-size: 1.2rem;
-	color: #16161A;
+	color: var(--fontMainColor);
 	margin: 10px 0;
 }
 
 .helpText {
 	font-size: 0.8rem;
-	color: #85868C;
+	color: var(--fontSecondaryColor);
 }
 
 .socialNetworks {

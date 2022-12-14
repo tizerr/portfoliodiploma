@@ -40,6 +40,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
+    color: var(--fontMainColor)
 }
 
 .list {
@@ -57,21 +58,22 @@
     font-size: 1.2rem;
     margin: 0 0 .5rem;
     text-align: left;
+    color: var(--fontMainColor)
 }
 
 .listItem__address {
-    color: grey;
+    color: var(--fontSecondaryColor);
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
 .listItem__address_active {
-    color: black;
+    color: var(--fontMainColor);
 }
 
 .listItem__icon {
-    color: #16161A;
+    color: var(--fontMainColor);
     height: 1.5rem;
     min-height: 100%;
     font-weight: 800;

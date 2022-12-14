@@ -28,14 +28,14 @@
 
 .line {
 	height: 5px;
-	background: #EBECF0;
+	background: var(--bgHeaderColor);
 	margin: 5px 0;
 	position: relative;
 	border-radius: 5px;
 }
 
 .segment {
-	background: #16161A;
+	background: var(--bgTogglerColor);
 	position: absolute;
 	height: 100%;
 	top: 0;
@@ -46,12 +46,12 @@
 
 .nextBtn {
 	top: -13%;
-	right: 30px;
+	right: 0;
 }
 
 .prevBtn {
 	top:-13%;
-	right: 85px;
+	right: 3.4375rem;
 }
 
 .nextBtn, .prevBtn {
@@ -59,7 +59,7 @@
 	padding: 0;
 	width: 2.5rem;
 	height: 2.5rem;
-	background: "#D2D3D9";
+	background-color: var(--bgButtonColor);
 	border-radius: 3px;
 	position: absolute;
 	z-index: 10;
@@ -72,14 +72,15 @@
 	margin: auto
 }
 
-.imgBlock img {
+.imgBlock > img {
 	display:block;
 	width: 100%;
 	height: auto;
+	/*background-color: var(--fontMainColor);*/
 }
 
 .title {
 	margin: 20px 0;
 	font-size: 3rem;
-	color: #16161A;
+	color: var(--fontMainColor);
 }
