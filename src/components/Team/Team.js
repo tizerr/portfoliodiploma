@@ -5,6 +5,7 @@ import TeamMember from '../TeamMember/TeamMember.js'
 import slideCards from '../../mock/sliderCards.js'
 import nextarr from '../../img/next-arrow.svg'
 import prevarr from '../../img/prev-arrow.svg'
+import {v4} from 'uuid';
 
 
 function getItem(obj, id) {
@@ -18,7 +19,6 @@ function getItem(obj, id) {
 				key={id}/>
 }
 
-import {v4} from 'uuid';
 
 
 function mod(a, b) {

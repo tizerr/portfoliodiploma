@@ -1,14 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5193b6e.css",
-    "main.js": "/static/js/main.c2644574.js",
+    "main.css": "/static/css/main.7f51e1ef.css",
+    "main.js": "/static/js/main.3ac7695d.js",
     "static/media/YandexSansDisplay-Regular.ttf": "/static/media/YandexSansDisplay-Regular.f7b0cd2fb662aa10f1b2.ttf",
+    "static/media/placemark.svg": "/static/media/placemark.1eee02301529a560225ded60b95c609c.svg",
+    "static/media/github-icon.svg": "/static/media/github-icon.a85ca63b5ca4f334d7df29c8d246a026.svg",
+    "static/media/telegram-icon.svg": "/static/media/telegram-icon.eb8e7e5ca0124ddec9d8a3f4097b6f58.svg",
     "index.html": "/index.html",
-    "main.c5193b6e.css.map": "/static/css/main.c5193b6e.css.map",
-    "main.c2644574.js.map": "/static/js/main.c2644574.js.map"
+    "static/media/placemarkActive.svg": "/static/media/placemarkActive.58cfb4dfb638028713e87e34e5751aac.svg",
+    "static/media/closeButton.svg": "/static/media/closeButton.e0eeb6d2bae0dcb161ba7d6d3e056464.svg",
+    "static/media/next-arrow.svg": "/static/media/next-arrow.fc11826c4b2cfe4abc45ecc509dcf5ad.svg",
+    "static/media/prev-arrow.svg": "/static/media/prev-arrow.9933390d8fe945a2bdb24e5c10b66aa2.svg",
+    "main.7f51e1ef.css.map": "/static/css/main.7f51e1ef.css.map",
+    "main.3ac7695d.js.map": "/static/js/main.3ac7695d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5193b6e.css",
-    "static/js/main.c2644574.js"
+    "static/css/main.7f51e1ef.css",
+    "static/js/main.3ac7695d.js"
   ]
 }

@@ -5,7 +5,6 @@ const slideCards = [
 			"photo": "./img/person-photo.png",
 			"description": "Я - тимлид команды. Web-разработка - одно из моих хобби, которое сильно преобразилось после Интенсива. Кроме этого меня интересует аналитика данных, но для нее нужно чуть-чуть поумнеть:)",
 
-
 			"full-name": "Шахмар Абдуллаев",
 			"photo": "./img/person-photo.png",
 			"description": "Меня зовут Шахмар! Я ученик It-класса. В настоящее время популярность It-сферы развивается с огромной скоростью. И я стараюсь не отставать!",
@@ -20,16 +19,14 @@ const slideCards = [
 				"CSS",
 				"JavaScript",
 				"React",
-
 				"SCSS",
 				"Python",
 				"BS4",
 				"С++"
 			],
 			"gitHub": "https://github.com/Dinarchak",
-			"telegram": "https://t.me/FazikkD"
-
-				"PHP",
+			"telegram": "https://t.me/FazikkD",
+			"dev-stack":["PHP",
 				"SQl",
 				"Python",
 				"Java"
