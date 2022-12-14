@@ -8,7 +8,7 @@ import { useState } from 'react'
 function addWorks(works, count) {
 	let visibleWorks = []
 	for (let i in works) {
-		if (i == count)
+		if (i === count)
 			break
 		visibleWorks.push(works[i])
 	}

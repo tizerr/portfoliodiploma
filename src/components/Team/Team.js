@@ -7,20 +7,6 @@ import nextarr from '../../img/next-arrow.svg'
 import prevarr from '../../img/prev-arrow.svg'
 import {v4} from 'uuid';
 
-
-function getItem(obj, id) {
-	return <TeamMember 
-				imgPath={obj['photo']} 
-				fullName={obj['full-name']}
-				gitHub={obj['gitHub']}
-				telegram={obj['telegram']}
-				text={obj['description']}
-				devStack={obj['dev-stack']}
-				key={id}/>
-}
-
-
-
 function mod(a, b) {
 	if (a >= 0)
 		return a % b;
@@ -66,7 +52,6 @@ function Team(props) {
 		slidesToShow: 3,
     	slidesToScroll: 3,
     	speed: 200,
-    	infinite: false,
     	arrows: true,
     	infinite: true,
     	nextArrow: SampleNextArrow({"styles":styles, "img_path":nextarr}),
