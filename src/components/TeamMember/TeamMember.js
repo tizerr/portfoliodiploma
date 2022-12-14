@@ -1,9 +1,9 @@
 import styles from "./styles.module.css"
 import telegram from '../../img/telegram-icon.svg'
 import github from '../../img/github-icon.svg'
+import {v4} from 'uuid';
 
 function get_item(val, id) {
-	return <li className={styles.helpText} key={id}>{val}</li>
 }
 
 function TeamMember(props) {
@@ -27,9 +27,11 @@ function TeamMember(props) {
 			</h6>
 			<p className={styles.text}>{props.text}</p>
 			<ul className={styles.developmentStack}>
-				{props.devStack.map(get_item)}
+				{props.devStack.map((val) => {
+					return <li className={styles.helpText} key={v4()}>{val}</li>
+				})}
 			</ul>
-		</div>	
+		</div>
 	</>
 }
 
