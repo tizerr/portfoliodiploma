@@ -19,11 +19,13 @@
 - кнопка показать "еще"
 
 ### Стек
-* html
-* css
-* bem
-* React.js
+
+- html
+- css
+- bem
+- React.js
 
 ### Запуск проект
-* npm init
-* npm run start
+
+- npm init
+- npm run start

@@ -1,4 +1,5 @@
 export const footerMembers = [
+
     {
         id: 1,
         name: 'Илья Плесский',
@@ -8,25 +9,27 @@ export const footerMembers = [
             git: 'https://github.com/tizerr',
             telegram: 'https://t.me/t1z3rr'
         }
+
     },
-    {
-        id: 2,
-        name: 'Динар Фазлиев',
-        tel: '+79053765012',
-        email: 'jjustdinar@yandex.ru',
-        social: {
-            git: 'https://github.com/Dinarchak',
-            telegram: 'https://t.me/FazikkD'
-        }
+  },
+  {
+    id: 2,
+    name: "Динар Фазлиев",
+    tel: "+79053765012",
+    email: "jjustdinar@yandex.ru",
+    social: {
+      git: "https://github.com/Dinarchak",
+      telegram: "https://t.me/FazikkD",
     },
-    {
-        id: 3,
-        name: 'Шахмар Абдуллаев',
-        tel: '+7 965 441 26 30',
-        email: 'abdull.shah@mail.ru',
-        social: {
-            git: 'abdullZiba',
-            telegram: '@abdull_shahmar'
-        }
-    }
-]
+  },
+  {
+    id: 3,
+    name: "Шахмар Абдуллаев",
+    tel: "+7 965 441 26 30",
+    email: "abdull.shah@mail.ru",
+    social: {
+      git: "abdullZiba",
+      telegram: "@abdull_shahmar",
+    },
+  },
+];

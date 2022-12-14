@@ -1,4 +1,5 @@
 export const readyWork = [
+
     {
         previewPath: "../src/img/projects/project-preview.png",
         name: "Сайт для регистрации и мониторинга мероприятий на IT-полигоне",
@@ -72,3 +73,4 @@ export const readyWork = [
         technology: ["Python"]
     },
 ]
+

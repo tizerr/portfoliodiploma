@@ -65,7 +65,7 @@ export const MapSection = (props) => {
             defaultState={{
               center: [55.751574, 37.573856],
               zoom: 9,
-              controls: []
+              controls: [],
             }}
             width="100%"
             height="100%"
@@ -79,7 +79,7 @@ export const MapSection = (props) => {
                   iconImageSize: [50, 50],
                   iconImageHref: `${
                     m.id === activeMember ? placemarkActive : placemark
-                  }`
+                  }`,
                   // iconImageHref: `./img/${
                   //   m.id === activeMember
                   //     ? "placemarkActive.svg"

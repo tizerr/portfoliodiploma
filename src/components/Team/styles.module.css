@@ -4,82 +4,83 @@
 }
 
 .slider {
-	text-align: left;
-	margin: 20px 0 0 0;
-	font-family: "YS";
+  text-align: left;
+  margin: 20px 0 0 0;
+  font-family: "YS";
 }
 
 .slider > div {
-	position: relative;
+  position: relative;
 }
 
 .slider > div > div {
-	overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .slider > div > div > div {
-	display: flex;
+  display: flex;
 }
 
-.slider > div > div > div > div{
-	max-width: 40vw;
-	margin-right: 30px;
+.slider > div > div > div > div {
+  max-width: 40vw;
+  margin-right: 30px;
 }
 
 .line {
-	height: 5px;
-	background: #EBECF0;
-	margin: 5px 0;
-	position: relative;
-	border-radius: 5px;
+  height: 5px;
+  background: #ebecf0;
+  margin: 5px 0;
+  position: relative;
+  border-radius: 5px;
 }
 
 .segment {
-	background: #16161A;
-	position: absolute;
-	height: 100%;
-	top: 0;
-	left: 0;
-	border-radius: 5px;
-	transition: all 200ms ease-in-out 0s;
+  background: #16161a;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out 0s;
 }
 
 .nextBtn {
-	top: -13%;
-	right: 30px;
+  top: -13%;
+  right: 30px;
 }
 
 .prevBtn {
-	top:-13%;
-	right: 85px;
+  top: -13%;
+  right: 85px;
 }
 
-.nextBtn, .prevBtn {
-	border-width:0;
-	padding: 0;
-	width: 2.5rem;
-	height: 2.5rem;
-	background: "#D2D3D9";
-	border-radius: 3px;
-	position: absolute;
-	z-index: 10;
-	cursor: pointer;
+.nextBtn,
+.prevBtn {
+  border-width: 0;
+  padding: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: "#D2D3D9";
+  border-radius: 3px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .imgBlock {
-	width: 1.5rem;
-	height: 1.5rem;
-	margin: auto
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: auto;
 }
 
 .imgBlock img {
-	display:block;
-	width: 100%;
-	height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .title {
-	margin: 20px 0;
-	font-size: 3rem;
-	color: #16161A;
+  margin: 20px 0;
+  font-size: 3rem;
+  color: #16161a;
 }

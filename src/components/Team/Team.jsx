@@ -76,17 +76,17 @@ function Team(props) {
     infinite: true,
     nextArrow: SampleNextArrow({
       styles: styles,
-      img_path: "../../../next-arrow.svg"
+      img_path: "../../../next-arrow.svg",
     }),
     prevArrow: SamplePrevArrow({
       styles: styles,
-      img_path: "../../../prev-arrow.svg"
-    })
+      img_path: "../../../prev-arrow.svg",
+    }),
   };
 
   const segment_pos_and_width = {
     width: `${100 / (slideCards.length / 3)}%`,
-    left: `${(100 * slide) / (slideCards.length / 3)}%`
+    left: `${(100 * slide) / (slideCards.length / 3)}%`,
   };
 
   return (
