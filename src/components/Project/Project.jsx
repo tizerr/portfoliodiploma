@@ -1,12 +1,5 @@
 import styles from './styles.module.css'
-
-function getDevelopers(val, key) {
-	return <li className={styles.subTitle} key={key}>{val}</li>
-}
-
-function getDevelopmentStack(val, key) {
-	return <li className={styles.helpText} key={key}>{val}</li>	
-}
+import {v4} from 'uuid';
 
 function Project(props) {
 
@@ -17,14 +10,18 @@ function Project(props) {
 		<h2 className={styles.title}>{props.name}</h2>
 		<div className={styles.developers}>
 			<ul>
-				 {props.developers.map(getDevelopers)}
+				 {props.developers.map((val) => {
+				 	return <li className={styles.subTitle} key={v4()}>{val}</li>
+				 })}
 			</ul>
 			<span>•</span>
 			<p>{props.kind}</p>
 		</div>
 		<p className={styles.text}>{props.description}</p>
 		<ul className={styles.developmentStack}>
-			{props.developmentStack.map(getDevelopmentStack)}
+			{props.developmentStack.map((val) => {
+				return <li className={styles.helpText} key={v4()}>{val}</li>
+			})}
 		</ul>
 	</div>
 	</>
