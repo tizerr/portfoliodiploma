@@ -1,29 +1,18 @@
 const slideCards = [
 
-		{
-			"full-name": "Фазлиев Динар",
-			"photo": "./img/person-photo.png",
-			"description": "Я - тимлид команды. Web-разработка - одно из моих хобби, которое сильно преобразилось после Интенсива. Кроме этого меня интересует аналитика данных, но для нее нужно чуть-чуть поумнеть:)",
-
   {
     "full-name": "Фазлиев Динар",
     photo: "./img/person-photo.png",
-    description:
-      "Я - тимлид команды. Web-разработка - одно из моих хобби, 
-      которое сильно преобразилось после Интенсива. Кроме этого меня интересует аналитика данных,
-      но для нее нужно чуть-чуть поумнеть:)",
+    description:"Я - тимлид команды. Web-разработка - одно из моих хобби, которое сильно преобразилось после Интенсива. Кроме этого меня интересует аналитика данных,но для нее нужно чуть-чуть поумнеть:)",
 
     "full-name": "Шахмар Абдуллаев",
     photo: "./img/person-photo.png",
-    description:
-      "Меня зовут Шахмар! Я ученик It-класса. В настоящее время популярность
-      It-сферы развивается с огромной скоростью. И я стараюсь не отставать!",
+    description:"Меня зовут Шахмар! Я ученик It-класса. В настоящее время популярность It-сферы развивается с огромной скоростью. И я стараюсь не отставать!",
 
 
     "full-name": "Алеша попович",
     photo: "./person-photo.png",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ligula vel leo commodo dapibus eu vel justo. Vivamus non odio mauris. Ut ornare tempus tincidunt. Duis quis nibh eget.",
+    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel ligula vel leo commodo dapibus eu vel justo. Vivamus non odio mauris. Ut ornare tempus tincidunt. Duis quis nibh eget.",
 
     "dev-stack": [
       "HTML",

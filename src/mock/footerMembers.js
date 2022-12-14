@@ -11,7 +11,6 @@ export const footerMembers = [
         }
 
     },
-  },
   {
     id: 2,
     name: "Динар Фазлиев",
