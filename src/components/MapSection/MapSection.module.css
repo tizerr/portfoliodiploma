@@ -48,3 +48,8 @@
     min-height: 100%;
     font-weight: 800;
 }
+
+.transfer__line{
+    display: flex;
+    flex-wrap: wrap;
+}
