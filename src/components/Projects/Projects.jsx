@@ -33,7 +33,7 @@ function Projects(props) {
         						developmentStack={val['technology']}/>
 				})}
 			</div>
-			<button onClick={() => {setCount(count <= worksCount ? count + 2 : count)}}>Показать еще</button>
+			<button className={styles.showMoreBtn} onClick={() => {setCount(count <= worksCount ? count + 2 : count)}}>Показать еще</button>
 		</>
 }
 
