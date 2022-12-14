@@ -2,6 +2,8 @@ import styles from "./MapSection.module.css";
 import { Map, Placemark } from "@pbe/react-yandex-maps";
 import { useEffect, useState } from "react";
 import { members } from "../../mock/mapMembers";
+import placemark from '../../img/placemark.svg'
+import placemarkActive from '../../img/placemarkActive.svg'
 
 import placemark from '../../img/placemark.svg'
 import placemarkActive from '../../img/placemarkActive.svg'
@@ -78,12 +80,16 @@ export const MapSection = (props) => {
                 options={{
                   iconLayout: "default#image",
                   iconImageSize: [50, 50],
+
+                  iconImageHref: m.id === activeMember ? placemarkActive : placemark
+
                   iconImageHref:`${m.id === activeMember ? placemarkActive : placemark}`
                     // iconImageHref: `./img/${
                     //   m.id === activeMember
                     //     ? "placemarkActive.svg"
                     //     : "placemark.svg"
                     // }`
+
                 }}
               />
             ))}

@@ -12,11 +12,11 @@ export const footerMembers = [
     {
         id: 2,
         name: 'Динар Фазлиев',
-        tel: '***',
-        email: '***',
+        tel: '+79053765012',
+        email: 'jjustdinar@yandex.ru',
         social: {
-            git: '***',
-            telegram: '***'
+            git: 'https://github.com/Dinarchak',
+            telegram: 'https://t.me/FazikkD'
         }
     },
     {

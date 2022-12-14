@@ -5,7 +5,21 @@ import TeamMember from '../TeamMember/TeamMember.js'
 import slideCards from '../../mock/sliderCards.js'
 import nextarr from '../../img/next-arrow.svg'
 import prevarr from '../../img/prev-arrow.svg'
+
+
+function getItem(obj, id) {
+	return <TeamMember 
+				imgPath={obj['photo']} 
+				fullName={obj['full-name']}
+				gitHub={obj['gitHub']}
+				telegram={obj['telegram']}
+				text={obj['description']}
+				devStack={obj['dev-stack']}
+				key={id}/>
+}
+
 import {v4} from 'uuid';
+
 
 function mod(a, b) {
 	if (a >= 0)
