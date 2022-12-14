@@ -3,6 +3,8 @@ import styles from './styles.module.css'
 import {useRef, useState} from 'react'
 import TeamMember from '../TeamMember/TeamMember.js'
 import slideCards from '../../mock/sliderCards.js'
+import nextarr from '../../img/next-arrow.svg'
+import prevarr from '../../img/prev-arrow.svg'
 
 function getItem(obj, id) {
 	return <TeamMember 
@@ -63,8 +65,8 @@ function Team(props) {
     	infinite: false,
     	arrows: true,
     	infinite: true,
-    	nextArrow: SampleNextArrow({"styles":styles, "img_path":"../../../next-arrow.svg"}),
-    	prevArrow: SamplePrevArrow({"styles":styles, "img_path":"../../../prev-arrow.svg"})
+    	nextArrow: SampleNextArrow({"styles":styles, "img_path":nextarr}),
+    	prevArrow: SamplePrevArrow({"styles":styles, "img_path":prevarr})
 	}
 
 	const segment_pos_and_width = {
