@@ -2,7 +2,7 @@ import Project from '../Project/Project.jsx'
 import Header from '../Header/Header.js'
 import { readyWork } from '../../mock/readyWork.js'
 import styles from './styles.module.css'
-import v4 from 'uuid'
+import {v4} from 'uuid';
 
 function Projects(props) {
 	return <>
