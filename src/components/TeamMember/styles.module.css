@@ -1,57 +1,54 @@
 .block {
-	width: 100%;
+  width: 100%;
 }
 
 .imgBlock {
-	width: 100%;
+  width: 100%;
 }
 
 .imgBlock img {
-	display: block;
-	width: 100%;
-	height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .developmentStack {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 .developmentStack li {
-	display: inline-block;
-	list-style-type: none;
-	padding-right: 5px;
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 5px;
 }
 
 .developmentStack li:after {
-	content: ",";
+  content: ",";
 }
 
 .developmentStack li:last-child:after {
-	content:"";
+  content: "";
 }
 
 .text {
-	font-size: 1rem;
-	color: #4B4C52;
+  font-size: 1rem;
+  color: #4b4c52;
 }
 
 .title {
-	font-size: 1.2rem;
-	color: #16161A;
-	margin: 10px 0;
+  font-size: 1.2rem;
+  color: #16161a;
+  margin: 10px 0;
 }
 
 .helpText {
-	font-size: 0.8rem;
-	color: #85868C;
+  font-size: 0.8rem;
+  color: #85868c;
 }
 
 .socialNetworks {
-	display: inline-block;
-	width: 1.2rem;
-	height: 1.2rem;
-	margin: 0 0 0 3px;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0 0 0 3px;
 }
-
-
-

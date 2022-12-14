@@ -1,17 +1,17 @@
 .block {
-	margin: 20px 30px;
-	display: flex;
-	justify-content: start;
-	align-items: top;
-	flex-direction: row;
-	flex-wrap: wrap;
+  margin: 20px 30px;
+  display: flex;
+  justify-content: start;
+  align-items: top;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .showMoreBtn {
-	display: block;
-	margin: 10px auto;
-	padding: 7px;
-	border-radius: 3px;
-	background: #D2D3D9;
-	border: 0;
+  display: block;
+  margin: 10px auto;
+  padding: 7px;
+  border-radius: 3px;
+  background: #d2d3d9;
+  border: 0;
 }

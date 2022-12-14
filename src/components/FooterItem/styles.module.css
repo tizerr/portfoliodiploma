@@ -1,14 +1,12 @@
 .article {
-    text-align: start;
-    color: #16161A;
+  text-align: start;
+  color: #16161a;
 }
 
 .secondaryText {
-    color: #85868C;
+  color: #85868c;
 }
 
 .namePar {
-    font-style: italic;
+  font-style: italic;
 }
-
-
