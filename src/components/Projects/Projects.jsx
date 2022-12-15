@@ -4,6 +4,7 @@ import { readyWork } from "../../mock/readyWork.js";
 import styles from "./styles.module.css";
 import { v4 } from "uuid";
 import { useState } from "react";
+import classnames from "classnames";
 
 function addWorks(works, count) {
   let visibleWorks = [];
@@ -37,7 +38,7 @@ function Projects(props) {
         })}
       </div>
       <button
-        className={styles.showMoreBtn}
+        className={classnames(styles.showMoreBtn, {[styles.hideBtn]:count >= worksCount})}
         onClick={() => {
           setCount(count <= worksCount ? count + 2 : count);
         }}
