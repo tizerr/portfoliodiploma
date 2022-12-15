@@ -1,7 +1,7 @@
 export const readyWork = [
 
     {
-        previewPath: "../src/img/projects/project-preview.png",
+        previewPath: "./img/projects/project-preview.png",
         name: "Сайт для регистрации и мониторинга мероприятий на IT-полигоне",
         link: "http://t96544sc.beget.tech",
         author: ["Шахмар Абдуллаев"],
@@ -10,7 +10,7 @@ export const readyWork = [
         technology: ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
     },
     {
-        previewPath: "../src/img/projects/project-preview.png",
+        previewPath: "./img/projects/project-preview.png",
         name: "Парсер Ozon'a",
         link: undefined,
         author: ["Шахмар Абдуллаев"],
@@ -19,7 +19,7 @@ export const readyWork = [
         technology: ["PHP", "SQL"]
     },
     {
-        previewPath: "../src/img/projects/RSP.png",
+        previewPath: "./img/projects/RSP.png",
         name: "Камень/Ножницы/Бумага",
         link: "https://stonescissorspaper-pyscript.grusl.repl.co/",
         author: ["Фазлиев Динар", "Галеев Руслан"],
@@ -28,7 +28,7 @@ export const readyWork = [
         technology: ["HTML", "CSS", "PyScript"]
     },
     {
-        previewPath: "../src/img/projects/LibAni.png",
+        previewPath: "./img/projects/LibAni.png",
         name: "LibAni",
         link: undefined,
         author: ["Фазлиев Динар", "Галеев Руслан"],
@@ -37,7 +37,7 @@ export const readyWork = [
         technology: ["HTML", "CSS", "Python", "Django", "JavaScript", "slick.js"]
     },
     {
-        previewPath: "../src/img/projects/maket1.png",
+        previewPath: "./img/projects/maket1.png",
         name: "Верстка макета",
         link: undefined,
         author: ["Фазлиев Динар"],
@@ -46,7 +46,7 @@ export const readyWork = [
         technology: ["HTML", "CSS"]
     },
     {
-        previewPath: "../src/img/projects/maket2.png",
+        previewPath: "./img/projects/maket2.png",
         name: "Верстка макета",
         link: undefined,
         author: ["Фазлиев Динар"],
@@ -55,7 +55,7 @@ export const readyWork = [
         technology: ["HTML", "CSS", "JavaScript", "chart.js", "slick.js"]
     },
     {
-        previewPath: "../src/img/projects/maket2.png",
+        previewPath: "./img/projects/project-preview.png",
         name: "PracticeHub",
         link: undefined,
         author: ["Плесский Илья"],
@@ -64,7 +64,7 @@ export const readyWork = [
         technology: ["HTML", "CSS", "JavaScript"]
     },
     {
-        previewPath: "../src/img/projects/maket2.png",
+        previewPath: "./img/projects/project-preview.png",
         name: "Pymogus",
         link: undefined,
         author: ["Плесский Илья"],
