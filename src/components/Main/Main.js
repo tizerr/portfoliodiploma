@@ -1,5 +1,5 @@
 import Header from "../Header/Header.js";
-import Team from "../Team/Team.js";
+import Team from "../Team/Team.jsx";
 import { MapSection } from "../MapSection/MapSection";
 import { YMaps } from "@pbe/react-yandex-maps";
 import styles from "./styles.module.css";

@@ -3,20 +3,9 @@ import styles from "./styles.module.css";
 import { useRef, useState } from "react";
 import TeamMember from "../TeamMember/TeamMember.js";
 import slideCards from "../../mock/sliderCards.js";
-
-function get_item(obj, id) {
-  return (
-    <TeamMember
-      imgPath={obj["photo"]}
-      fullName={obj["full-name"]}
-      gitHub={obj["gitHub"]}
-      telegram={obj["telegram"]}
-      text={obj["description"]}
-      devStack={obj["dev-stack"]}
-      key={id}
-    />
-  );
-}
+import nextarr from "../../img/next-arrow.svg";
+import prevarr from "../../img/prev-arrow.svg";
+import { v4 } from "uuid";
 
 function mod(a, b) {
   if (a >= 0) return a % b;
@@ -71,21 +60,15 @@ function Team(props) {
     slidesToShow: 3,
     slidesToScroll: 3,
     speed: 200,
-    infinite: false,
     arrows: true,
     infinite: true,
-    nextArrow: SampleNextArrow({
-      styles: styles,
-      img_path: "../../../next-arrow.svg",
-    }),
-    prevArrow: SamplePrevArrow({
-      styles: styles,
-      img_path: "../../../prev-arrow.svg",
-    }),
+    nextArrow: SampleNextArrow({ styles: styles, img_path: nextarr }),
+    prevArrow: SamplePrevArrow({ styles: styles, img_path: prevarr }),
   };
 
   const segment_pos_and_width = {
     width: `${100 / (slideCards.length / 3)}%`,
+
     left: `${(100 * slide) / (slideCards.length / 3)}%`,
   };
 
@@ -93,7 +76,19 @@ function Team(props) {
     <div className={styles.slider}>
       <h1 className={styles.title}>Наша команда</h1>
       <Slider {...sliderConfigs} ref={sliderRef}>
-        {slideCards.map(get_item)}
+        {slideCards.map((obj) => {
+          return (
+            <TeamMember
+              imgPath={obj["photo"]}
+              fullName={obj["full-name"]}
+              gitHub={obj["gitHub"]}
+              telegram={obj["telegram"]}
+              text={obj["description"]}
+              devStack={obj["dev-stack"]}
+              key={v4()}
+            />
+          );
+        })}
       </Slider>
       <div className={styles.line}>
         <div className={styles.segment} style={segment_pos_and_width}></div>
