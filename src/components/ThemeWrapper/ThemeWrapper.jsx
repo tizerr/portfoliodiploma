@@ -3,8 +3,8 @@ import { createContext } from "react";
 import styles from "../ThemeToggler/styles.module.css";
 
 export const themes = {
-  dark: "",
-  light: "",
+  dark: "dark",
+  light: "light",
 };
 
 export const ThemeContext = createContext({
@@ -16,7 +16,7 @@ export function ThemeWrapper(props) {
   const [theme, setTheme] = useState(themes.light);
 
   function changeTheme(theme) {
-    setTheme(theme === themes.light ? themes.dark : theme.light);
+    setTheme(theme === themes.light ? themes.dark : themes.light);
   }
 
   useEffect(() => {

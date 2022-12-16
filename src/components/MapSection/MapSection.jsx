@@ -2,6 +2,7 @@ import styles from "./styles.module.css";
 import { Map, Placemark } from "@pbe/react-yandex-maps";
 import { useEffect, useState } from "react";
 import { members } from "../../mock/mapMembers";
+import {ThemeContext} from "../ThemeWrapper/ThemeWrapper";
 
 export const MapSection = (props) => {
   const [activeMember, setActiveMember] = useState(members[0].id);
@@ -45,15 +46,19 @@ export const MapSection = (props) => {
                     : ""
                 }`}
               >
-                <img
-                  className={styles.listItem__icon}
-                  src={`./img/${
-                    m.id === activeMember
-                      ? "placemarkActive.svg"
-                      : "placemark.svg"
-                  }`}
-                  alt=""
-                />
+                <ThemeContext.Consumer>
+                  {({theme}) => (
+                      <img
+                          className={styles.listItem__icon}
+                          src={`./img/${
+                              m.id === activeMember
+                                  ? `placemarkActive${theme === 'light' ? '' : '_dark-theme'}.svg`
+                                  : `placemark${theme === 'light' ? '' : '_dark-theme'}.svg`
+                          }`}
+                          alt=""
+                      />
+                  )}
+                </ThemeContext.Consumer>
                 <div>{m.address.text}</div>
               </div>
             </li>
