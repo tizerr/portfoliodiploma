@@ -24,7 +24,7 @@ export const footerMembers = [
   {
     id: 3,
     name: "Шахмар Абдуллаев",
-    tel: "+7 965 441 26 30",
+    tel: "+79654412630",
     email: "abdull.shah@mail.ru",
     social: {
       git: "abdullZiba",

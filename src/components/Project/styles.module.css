@@ -39,12 +39,12 @@ ul {
 
 .text {
   font-size: 1rem;
-  color: #4b4c52;
+  color: var(--fontSecondaryColor);
   text-align: start;
 }
 
 .title {
-  color: #16161a;
+  color: var(--fontMainColor);
   text-align: start;
   font-size: 2.7rem;
   margin: 15px 0;
@@ -52,7 +52,7 @@ ul {
 
 .developers {
   font-size: 1.2rem;
-  color: #16161a;
+  color: var(--fontMainColor);
   display: flex;
   justify-content: start;
   align-items: center;

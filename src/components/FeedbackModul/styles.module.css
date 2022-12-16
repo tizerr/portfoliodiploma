@@ -1,11 +1,11 @@
 .feedbackButton {
   border: none;
-  background: #d2d3d9;
+  background: var(--bgButtonColor);
   padding: 28px 58px;
   border-radius: 2px;
   font-size: 20px;
   font-weight: 500;
-  color: #16161a;
+  color: var(--fontMainColor);
 }
 
 .feedbackButton:hover {

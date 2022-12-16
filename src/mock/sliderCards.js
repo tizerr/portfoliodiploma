@@ -23,6 +23,14 @@ const slideCards = [
     "dev-stack": ["HTML", "CSS", "JavaScript", "React"],
     "gitHub": "https://github.com/tizerr",
     "telegram": "https://t.me/t1z3rr"
+  },
+  {
+    "full-name": "Илья Плесский",
+    "photo": "./img/projects/person-photo.png",
+    "description":"Меня зовут Шахмар! Я ученик It-класса. В настоящее время популярность It-сферы развивается с огромной скоростью. И я стараюсь не отставать!",
+    "dev-stack": ["HTML", "CSS", "JavaScript", "React"],
+    "gitHub": "https://github.com/tizerr",
+    "telegram": "https://t.me/t1z3rr"
   }
 ];
 

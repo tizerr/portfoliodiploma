@@ -4,9 +4,12 @@ import { useEffect, useState } from "react";
 import { members } from "../../mock/mapMembers";
 import placemark from "../../img/placemark.svg";
 import placemarkActive from "../../img/placemarkActive.svg";
+import placemarkDark from "../../img/placemark-dark.svg";
+import placemarkActiveDark from "../../img/placemarkActive-dark.svg";
 
 import { FeedbackModul } from "../FeedbackModul/FeedbackModul";
 import classNames from "classnames";
+import { ThemeContext } from "../ThemeWrapper/ThemeWrapper";
 
 export const MapSection = (props) => {
   const [activeMember, setActiveMember] = useState(members[0].id);
@@ -20,7 +23,7 @@ export const MapSection = (props) => {
 
   const resizeMap = (map) => {
     if (!map) return;
-    map.style.height = (map.offsetWidth * 0.8).toString() + "px";
+    map.style.height = (map.offsetWidth * 0.6).toString() + "px";
   };
 
   useEffect(() => {
@@ -29,7 +32,7 @@ export const MapSection = (props) => {
   }, [map]);
 
   return (
-    <section style={{ width: props.width, margin: "0 auto 0" }}>
+    <section className={styles.mapSection}>
       <div className={classNames(styles.title, styles.transfer__line)}>
         <h2 className={styles.title__name}>Контактная информация</h2>
         <FeedbackModul />
@@ -50,11 +53,15 @@ export const MapSection = (props) => {
                     : ""
                 }`}
               >
-                <img
-                  className={styles.listItem__icon}
-                  src={m.id === activeMember ? placemarkActive : placemark}
-                  alt=""
-                />
+                <ThemeContext.Consumer>
+                  {({theme}) => (
+                    <img
+                      className={styles.listItem__icon}
+                      src={m.id === activeMember ? (theme === 'light' ? placemarkActive : placemarkActiveDark) : (theme === 'light' ? placemark : placemarkDark)}
+                      alt=""
+                    />
+                  )}
+                </ThemeContext.Consumer>
                 <div>{m.address.text}</div>
               </div>
             </li>
@@ -63,9 +70,9 @@ export const MapSection = (props) => {
         <div style={{ width: "60%" }} ref={setMap}>
           <Map
             defaultState={{
-              center: [55.751574, 37.573856],
-              zoom: 9,
-              controls: [],
+              center: [55.683147, 42.180271],
+              zoom: 6,
+              controls: []
             }}
             width="100%"
             height="100%"
@@ -79,7 +86,7 @@ export const MapSection = (props) => {
                   iconImageSize: [50, 50],
                   iconImageHref: `${
                     m.id === activeMember ? placemarkActive : placemark
-                  }`,
+                  }`
                   // iconImageHref: `./img/${
                   //   m.id === activeMember
                   //     ? "placemarkActive.svg"
