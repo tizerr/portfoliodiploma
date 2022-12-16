@@ -32,9 +32,9 @@ export const HiddenFeedback = ({ active, setActive }) => {
         className={classNames(styles.formSection)}
         onClick={(e) => e.stopPropagation()}
       >
-        <span className={classNames(styles.formSpan)}>
+        <div className={classNames(styles.formTitle)}>
           Форма для связи с нами
-        </span>
+        </div>
         <form action="" onSubmit={(e) => e.preventDefault()}>
           <div className={classNames(styles.forInput, styles.mb30)}>
             <label htmlFor="nameInput" className={classNames(styles.labelSize)}>

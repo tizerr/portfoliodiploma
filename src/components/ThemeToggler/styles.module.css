@@ -1,0 +1,26 @@
+.btn {
+    border: none;
+    border-radius: 1.5rem;
+    background-color: var(--bgTogglerColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 0.25rem 0.5rem;
+}
+
+.btn:active {
+    border: 0;
+}
+
+.btn__sun {
+    margin-right: 1.75rem;
+}
+
+.button__icon_disabled {
+    opacity: 50%;
+}
+
+.btn__moon, .btn__sun {
+    height: 2rem;
+}
