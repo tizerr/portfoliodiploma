@@ -33,6 +33,8 @@ export const footerMembers = [
     id: 3,
     name: "Шахмар Абдуллаев",
     tel: "+7 965 441 26 30",
+    email: "abdull.shah@mail.ru",
+
     social: {
       email: "abdull.shah@mail.ru",
       git: "abdullZiba",

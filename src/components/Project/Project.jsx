@@ -23,7 +23,8 @@ function Project(props) {
           <p>{props.kind}</p>
         </div>
         <p className={styles.text}>{props.description}</p>
-        <ul className={styles.developmentStack}>
+        <p>
+          <ul className={styles.developmentStack}>
           {props.developmentStack.map((val) => {
             return (
               <li className={styles.helpText} key={v4()}>
@@ -31,7 +32,8 @@ function Project(props) {
               </li>
             );
           })}
-        </ul>
+          </ul>
+        </p>
       </div>
     </>
   );

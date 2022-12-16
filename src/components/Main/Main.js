@@ -11,7 +11,7 @@ function Main(props) {
       <div className={styles.block}>
         <YMaps>
           <Team />
-          <MapSection width="75%" />
+          <MapSection width="100%" />
         </YMaps>
       </div>
     </>

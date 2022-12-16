@@ -1,17 +1,19 @@
 .formSection {
   max-width: 560px;
   padding: 48px;
-  background: white;
+  background: var(--bgHeaderColor);
   border-radius: 2px;
   position: relative;
   z-index: 2;
   transition: inherit;
+  color: var(--fontMainColor);
 }
 
-.formSpan {
-  display: inline-block;
+.formTitle {
   font-size: 40px;
   margin-bottom: 40px;
+  color: var(--fontMainColor);
+  text-align: center;
 }
 
 .forInput {
@@ -33,6 +35,9 @@
 .inputSize {
   padding: 8px;
   font-size: 20px;
+  background: var(--bgInputColor);
+  color: var(--fontMainColor);
+  border: 0;
 }
 
 .labelArea {
@@ -45,21 +50,26 @@
   max-height: 125px;
   padding: 8px;
   font-size: 20px;
+  background-color: var(--bgInputColor);
+  color: var(--fontMainColor);
+  border: 0
 }
 
 .checkInput {
   margin: 0;
   margin-right: 15px;
-  height: 50px;
-  width: 50px;
+  height: 25px;
+  width: 25px;
+  background: var(--bgButtonColor);
 }
 
 .submitButton {
   border: none;
   font-size: 28px;
-  background: #d2d3d9;
+  background: var(--bgButtonColor);
   padding: 23px;
   width: 100%;
+  color: var(--fontMainColor);
 }
 
 .closeButton {

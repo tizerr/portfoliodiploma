@@ -5,11 +5,11 @@
 }
 
 .secondaryText {
-  color: #85868c;
+  color: var(--fontSecondaryColor);
 }
 
 .namePar {
-  font-style: italic;
+  font-weight: 600;
 }
 
 a {
