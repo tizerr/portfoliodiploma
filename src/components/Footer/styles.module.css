@@ -3,8 +3,9 @@ p {
 }
 
 .footer {
+  margin: 4rem 0 0 0 ;
   padding: 10px;
   display: flex;
   justify-content: space-evenly;
-  background: #ebecf0;
+  background: var(--bgHeaderColor);
 }

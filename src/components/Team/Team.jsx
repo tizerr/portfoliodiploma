@@ -5,7 +5,10 @@ import TeamMember from "../TeamMember/TeamMember.js";
 import slideCards from "../../mock/sliderCards.js";
 import nextarr from "../../img/next-arrow.svg";
 import prevarr from "../../img/prev-arrow.svg";
+import nextarrDark from "../../img/next-arrow-dark.svg";
+import prevarrDark from "../../img/prev-arrow-dark.svg";
 import { v4 } from "uuid";
+import {ThemeContext} from "../ThemeWrapper/ThemeWrapper";
 
 function mod(a, b) {
   if (a >= 0) return a % b;
@@ -19,39 +22,47 @@ function Team(props) {
   const [slide, setSlide] = useState(0);
 
   function SampleNextArrow(props) {
-    const { styles, img_path } = props;
+    const { styles, img_light, img_dark } = props;
     return (
       <>
-        <button
-          className={styles.nextBtn + " slick-arrow slick-next"}
-          onClick={() => {
-            setSlide(mod(slide + 1, slideCards.length));
-            sliderRef.current.slickNext();
-          }}
-        >
-          <div className={styles.imgBlock}>
-            <img src={img_path} alt="" />
-          </div>
-        </button>
+        <ThemeContext.Consumer>
+          {({theme}) => (
+            <button
+              className={styles.nextBtn + " slick-arrow slick-next"}
+              onClick={() => {
+                setSlide(mod(slide + 1, slideCards.length / 3));
+                sliderRef.current.slickNext();
+              }}
+            >
+              <div className={styles.imgBlock}>
+                <img src={theme === 'light' ? img_light : img_dark} alt="" />
+              </div>
+            </button>
+          )}
+        </ThemeContext.Consumer>
       </>
     );
   }
 
   function SamplePrevArrow(props) {
-    const { styles, img_path } = props;
+    const { styles, img_light, img_dark } = props;
     return (
       <>
-        <button className={styles.prevBtn}>
-          <div
-            className={styles.imgBlock}
-            onClick={() => {
-              setSlide(mod(slide - 1, slideCards.length));
-              sliderRef.current.slickPrev();
-            }}
-          >
-            <img src={img_path} alt="" />
-          </div>
-        </button>
+        <ThemeContext.Consumer>
+          {({theme}) => (
+            <button className={styles.prevBtn}>
+              <div
+                className={styles.imgBlock}
+                onClick={() => {
+                  setSlide(mod(slide - 1, slideCards.length / 3));
+                  sliderRef.current.slickPrev();
+                }}
+              >
+                <img src={theme === 'light' ? img_light : img_dark} alt="" />
+              </div>
+            </button>
+          )}
+        </ThemeContext.Consumer>
       </>
     );
   }
@@ -62,8 +73,9 @@ function Team(props) {
     centerMode: true,
     speed: 200,
     arrows: true,
-    nextArrow: SampleNextArrow({ styles: styles, img_path: nextarr }),
-    prevArrow: SamplePrevArrow({ styles: styles, img_path: prevarr }),
+    infinite: true,
+    nextArrow: SampleNextArrow({ styles: styles, img_light: nextarr, img_dark: nextarrDark }),
+    prevArrow: SamplePrevArrow({ styles: styles, img_light: prevarr, img_dark: prevarrDark }),
   };
 
   const segment_pos_and_width = {
