@@ -25,7 +25,7 @@ function Team(props) {
         <button
           className={styles.nextBtn + " slick-arrow slick-next"}
           onClick={() => {
-            setSlide(mod(slide + 1, slideCards.length / 3));
+            setSlide(mod(slide + 1, slideCards.length));
             sliderRef.current.slickNext();
           }}
         >
@@ -45,7 +45,7 @@ function Team(props) {
           <div
             className={styles.imgBlock}
             onClick={() => {
-              setSlide(mod(slide - 1, slideCards.length / 3));
+              setSlide(mod(slide - 1, slideCards.length));
               sliderRef.current.slickPrev();
             }}
           >
@@ -57,19 +57,19 @@ function Team(props) {
   }
 
   const sliderConfigs = {
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
     speed: 200,
     arrows: true,
-    infinite: true,
     nextArrow: SampleNextArrow({ styles: styles, img_path: nextarr }),
     prevArrow: SamplePrevArrow({ styles: styles, img_path: prevarr }),
   };
 
   const segment_pos_and_width = {
-    width: `${100 / (slideCards.length / 3)}%`,
+    width: `${100 / slideCards.length}%`,
 
-    left: `${(100 * slide) / (slideCards.length / 3)}%`,
+    left: `${(100 * slide) / (slideCards.length)}%`,
   };
 
   return (
