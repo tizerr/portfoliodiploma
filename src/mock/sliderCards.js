@@ -23,7 +23,7 @@ const slideCards = [
     "dev-stack": ["HTML", "CSS", "JavaScript", "React"],
     "gitHub": "https://github.com/tizerr",
     "telegram": "https://t.me/t1z3rr"
-  }
+  },
 ];
 
 export default slideCards;
