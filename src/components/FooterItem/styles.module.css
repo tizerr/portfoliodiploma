@@ -1,6 +1,7 @@
 .article {
   text-align: start;
   color: #16161a;
+  font-size: 0.9rem
 }
 
 .secondaryText {
@@ -9,4 +10,8 @@
 
 .namePar {
   font-style: italic;
+}
+
+a {
+  color: black;
 }

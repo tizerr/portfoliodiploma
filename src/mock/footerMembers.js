@@ -3,7 +3,7 @@ export const footerMembers = [
     {
         id: 1,
         name: 'Илья Плесский',
-        tel: '+79255345543',
+        tel: '+7 925 534 55 43',
         social: {
             git: 'tizerr',
             telegram: 't1z3rr',
@@ -18,7 +18,7 @@ export const footerMembers = [
   {
     id: 2,
     name: "Динар Фазлиев",
-    tel: "+79053765012",
+    tel: "+7 905 376 50 12",
     social: {
       git: "FazikkD",
       telegram: "FazikkD",
