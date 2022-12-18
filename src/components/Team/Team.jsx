@@ -68,8 +68,9 @@ function Team(props) {
   }
 
   const sliderConfigs = {
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
     speed: 200,
     arrows: true,
     infinite: true,
@@ -78,9 +79,9 @@ function Team(props) {
   };
 
   const segment_pos_and_width = {
-    width: `${100 / (slideCards.length / 3)}%`,
+    width: `${100 / slideCards.length}%`,
 
-    left: `${(100 * slide) / (slideCards.length / 3)}%`,
+    left: `${(100 * slide) / (slideCards.length)}%`,
   };
 
   return (

@@ -16,11 +16,11 @@ export const FooterItem = (props) => {
       </p>
       <p>
         <span className={classNames(styles.secondaryText)}>ГитХаб:</span>{" "}
-        {person.social.git}
+        <a href={person.links.git}>{person.social.git}</a>
       </p>
       <p>
         <span className={classNames(styles.secondaryText)}>Телеграм:</span>{" "}
-        {person.social.telegram}
+        <a href={person.links.telegram}>{person.social.telegram}</a>
       </p>
     </article>
   );

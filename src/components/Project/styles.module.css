@@ -7,13 +7,13 @@
   width: 100%;
   height: 50vh;
   overflow-y: hidden;
+  border-radius: 5px;
 }
 
 .imgBlock img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 5px;
 }
 
 ul {
