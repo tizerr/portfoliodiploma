@@ -12,7 +12,7 @@ export const FooterItem = (props) => {
       </p>
       <p>
         <span className={classNames(styles.secondaryText)}>Почта:</span>{" "}
-        {person.email}
+        {person.social.email}
       </p>
       <p>
         <span className={classNames(styles.secondaryText)}>ГитХаб:</span>{" "}

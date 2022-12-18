@@ -30,7 +30,8 @@ function Team(props) {
             <button
               className={styles.nextBtn + " slick-arrow slick-next"}
               onClick={() => {
-                setSlide(mod(slide + 1, slideCards.length / 3));
+                console.log(mod(slide + 1, slideCards.length))
+                setSlide(mod(slide + 1, slideCards.length));
                 sliderRef.current.slickNext();
               }}
             >
@@ -54,7 +55,8 @@ function Team(props) {
               <div
                 className={styles.imgBlock}
                 onClick={() => {
-                  setSlide(mod(slide - 1, slideCards.length / 3));
+                  console.log(mod(slide - 1, slideCards.length))
+                  setSlide(mod(slide - 1, slideCards.length));
                   sliderRef.current.slickPrev();
                 }}
               >

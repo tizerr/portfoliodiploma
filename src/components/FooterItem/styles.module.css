@@ -12,6 +12,6 @@
   font-weight: 600;
 }
 
-a {
-  color: black;
+p, p a {
+  color: var(--fontMainColor);
 }
