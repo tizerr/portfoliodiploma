@@ -1,4 +1,4 @@
-import styles from "./MapSection.module.css";
+import styles from "./styles.module.css";
 import { Map, Placemark } from "@pbe/react-yandex-maps";
 import { useEffect, useState } from "react";
 import { members } from "../../mock/mapMembers";
@@ -87,11 +87,6 @@ export const MapSection = (props) => {
                   iconImageHref: `${
                     m.id === activeMember ? placemarkActive : placemark
                   }`
-                  // iconImageHref: `./img/${
-                  //   m.id === activeMember
-                  //     ? "placemarkActive.svg"
-                  //     : "placemark.svg"
-                  // }`
                 }}
               />
             ))}

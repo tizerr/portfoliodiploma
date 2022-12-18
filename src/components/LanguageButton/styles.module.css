@@ -1,0 +1,7 @@
+.select {
+    border: none;
+    outline: none;
+    background-color: var(--bgButtonColor);
+    height: 2rem;
+    padding: 0.25rem 0.5rem;
+}
