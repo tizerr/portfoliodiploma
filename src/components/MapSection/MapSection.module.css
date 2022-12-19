@@ -5,20 +5,25 @@
 
 .mapSection {
   width: 100%;
-  margin: 8rem 0 0 0;
+  margin: 3rem 0;
 }
 
 .mapDiv {
   width: 65%;
 }
 
-@media (max-width: 1000px) {
-  .mapSection {
-    margin: 5rem 0;
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .container > div {
+    margin: 0 0 20px 0;
   }
 }
 
-@media (max-width: 675px) {
+/*@media (max-width: 675px) {
   .container {
     flex-wrap: wrap;
   }
@@ -28,7 +33,7 @@
   .mapDiv {
     width: 100%;
   }
-}
+}*/
 
 .title {
   margin-bottom: 3rem;
@@ -39,7 +44,7 @@
 .title__name {
   font-size: 2rem;
   font-weight: 700;
-  margin: 0;
+  margin: 0 15px 2rem 0;
   color: var(--fontMainColor)
 }
 
