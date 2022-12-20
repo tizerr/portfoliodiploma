@@ -66,6 +66,10 @@ ul {
   margin: 0 0 0 5px;
 }
 
+.developers li:first-child {
+  margin: 0;
+}
+
 .developers span {
   font-size: 1.8rem;
   margin: 0 8px;
