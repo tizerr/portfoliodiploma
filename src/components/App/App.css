@@ -41,6 +41,8 @@ body {
   --fontSpecialColor: white;
   --fontSecondaryColor: #85868C;
   --bgFeedbackColor: white;
+  --fbRequiredFieldColor: #bf1d1d;
+  --lazyLoaderColor: #454545;
 }
 
 .themeDark {
@@ -54,4 +56,6 @@ body {
   --fontSpecialColor: white;
   --fontSecondaryColor: #85868C;
   --bgFeedbackColor: #303034;
+  --fbRequiredFieldColor: #bf1d1d;
+  --lazyLoaderColor: #d1d1d1;
 }
