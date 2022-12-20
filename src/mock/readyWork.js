@@ -1,4 +1,4 @@
-export const readyWork = [
+export const readyWorkRU = [
 
     {
         previewPath: "./img/projects/project-preview.png",
@@ -70,6 +70,82 @@ export const readyWork = [
         author: ["Плесский Илья"],
         purpose: "Групповой проект",
         description: 'Копия игры Among Us на python с использованием pygame и socket',
+        technology: ["Python"]
+    },
+]
+
+export const readyWorkEn = [
+
+    {
+        previewPath: "./img/projects/project-preview.png",
+        name: "Website for registering and monitoring events at the IT training ground",
+        link: "http://t96544sc.beget.tech",
+        author: ["Shahmar Abdullayev"],
+        purpose: "Personal Project",
+        description: "PolygonCool is a Web site that will automate the process of organizing events based on IT-polygon and registering students from different corps in the school.",
+        technology: ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
+    },
+    {
+        previewPath: "./img/projects/project-preview.png",
+        name: "Ozon parser",
+        link: undefined,
+        author: ["Shahmar Abdullayev"],
+        purpose: "Personal Project",
+        description: "Parser is a software tool that automatically collects information from specified web resources. It allows you to solve a variety of tasks, including Internet marketing, filling and promotion of sites. When you need to process millions of records, Parser will do it quickly and efficiently.",
+        technology: ["PHP", "SQL"]
+    },
+    {
+        previewPath: "./img/projects/RSP.png",
+        name: "Rock/Scissors/Paper",
+        link: "https://stonescissorspaper-pyscript.grusl.repl.co/",
+        author: ["Fazliev Dinar", "Galeev Ruslan"],
+        purpose: "Personal Project",
+        description: 'Rock-paper-scissors game against a bot in the browser window. Cute design, nice animations, and hardcore combat.',
+        technology: ["HTML", "CSS", "PyScript"]
+    },
+    {
+        previewPath: "./img/projects/LibAni.png",
+        name: "LibAni",
+        link: undefined,
+        author: ["Fazliev Dinar", "Galeev Ruslan"],
+        purpose: "Personal Project",
+        description: 'That "perfect" site, which every frontender has probably dreamed of developing. Ideologically, the project is an analogue of shikimory, unfortunately, implemented on one page and frozen.',
+        technology: ["HTML", "CSS", "Python", "Django", "JavaScript", "slick.js"]
+    },
+    {
+        previewPath: "./img/projects/maket1.png",
+        name: "Layout",
+        link: undefined,
+        author: ["Fazliev Dinar"],
+        purpose: "Personal Project",
+        description: 'There are many open layouts in Figma for practice in layout. This page is a layout of one of these layouts. By his example, I learned how to adaptive layout (rubber layout) and work with images. The whole page - one big burger, the orientation of which is done with the help of links in the header.',
+        technology: ["HTML", "CSS"]
+    },
+    {
+        previewPath: "./img/projects/maket2.png",
+        name: "Layout",
+        link: undefined,
+        author: ["Fazliev Dinar"],
+        purpose: "Personal Project",
+        description: 'There are many open layouts in Figma for practice in layout. This page is a layout of one of those layouts. By doing this project, I learned how to use third-party JavaScript libraries. Of interest, I\'ll note the presence of a chart recreated by the chart.js library and a few sliders.',
+        technology: ["HTML", "CSS", "JavaScript", "chart.js", "slick.js"]
+    },
+    {
+        previewPath: "./img/projects/project-preview.png",
+        name: "PracticeHub",
+        link: undefined,
+        author: ["Plessky Ilya"],
+        purpose: "Group project",
+        description: 'A site where you can create and take courses',
+        technology: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        previewPath: "./img/projects/project-preview.png",
+        name: "Pymogus",
+        link: undefined,
+        author: ["Plessky Ilya"],
+        purpose: "Group project",
+        description: 'A copy of Among Us in python using pygame and socket',
         technology: ["Python"]
     },
 ]

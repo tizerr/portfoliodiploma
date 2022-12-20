@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import { Map, Placemark } from "@pbe/react-yandex-maps";
-import { useEffect, useState } from "react";
-import { members } from "../../mock/mapMembers";
+import { useContext, useEffect, useState } from "react";
+import { membersEn, membersRU } from "../../mock/mapMembers";
 import placemark from "../../img/placemark.svg";
 import placemarkActive from "../../img/placemarkActive.svg";
 import placemarkDark from "../../img/placemark-dark.svg";
@@ -11,8 +11,11 @@ import { FeedbackModule } from "../FeedbackModule/FeedbackModule";
 import classNames from "classnames";
 import { ThemeContext } from "../ThemeWrapper/ThemeWrapper";
 import { FormattedMessage } from "react-intl";
+import { LanguageContext } from "../LanguageWrapper/LanguageWrapper";
+import { slideCardsEn, slideCardsRu } from "../../mock/sliderCards";
 
 export const MapSection = (props) => {
+  const members = (useContext(LanguageContext).locale === 'en') ? membersEn : membersRU
   const [activeMember, setActiveMember] = useState(members[0].id);
 
   function click(e, key) {

@@ -1,10 +1,12 @@
 import Project from "../Project/Project.jsx";
 import Header from "../Header/Header.js";
-import { readyWork } from "../../mock/readyWork.js";
+import { readyWorkEn, readyWorkRU } from "../../mock/readyWork.js";
 import styles from "./styles.module.css";
 import { v4 } from "uuid";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import classnames from "classnames";
+import { LanguageContext } from "../LanguageWrapper/LanguageWrapper";
+import { membersEn, membersRU } from "../../mock/mapMembers";
 
 function addWorks(works, count) {
   let visibleWorks = [];
@@ -16,6 +18,8 @@ function addWorks(works, count) {
 }
 
 function Projects(props) {
+  const readyWork = (useContext(LanguageContext).locale === 'en') ? readyWorkEn : readyWorkRU
+
   const [count, setCount] = useState(2);
   const worksCount = readyWork.length;
   const visibleWorks = addWorks(readyWork, count);

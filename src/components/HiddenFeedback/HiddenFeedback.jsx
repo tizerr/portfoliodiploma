@@ -2,6 +2,8 @@ import styles from "./styles.module.css";
 import classNames from "classnames";
 import { useEffect } from "react";
 import closeButton from "../../img/closeButton.svg";
+import closeButtonDark from "../../img/closeButton-dark.svg";
+import {ThemeContext} from '../ThemeWrapper/ThemeWrapper'
 
 export const HiddenFeedback = ({ active, setActive }) => {
   useEffect(() => {
@@ -93,7 +95,11 @@ export const HiddenFeedback = ({ active, setActive }) => {
             className={classNames(styles.closeButton)}
             onClick={() => setActive(false)}
           >
-            <img src={closeButton} alt="X" />
+            <ThemeContext.Consumer>
+              {({theme}) => (
+                <img src={theme === 'light' ? closeButton : closeButtonDark} alt="X" />
+              )}
+            </ThemeContext.Consumer>
           </button>
         </form>
       </section>
