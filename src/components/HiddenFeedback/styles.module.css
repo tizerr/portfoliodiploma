@@ -1,7 +1,7 @@
 .formSection {
   max-width: 560px;
   padding: 48px;
-  background: var(--bgHeaderColor);
+  background: var(--bgFeedbackColor);
   border-radius: 2px;
   position: relative;
   z-index: 2;
@@ -40,8 +40,7 @@
   padding: 8px;
   font-size: 20px;
   background: var(--bgInputColor);
-  color: var(--fontMainColor);
-  border: 0;
+  color: black;
 }
 
 .labelArea {
@@ -49,15 +48,24 @@
 }
 
 .textareaText {
-  max-width: 100%;
+  resize: vertical;
   min-height: 40px;
   max-height: 125px;
   padding: 8px;
   font-size: 20px;
   background-color: var(--bgInputColor);
-  color: var(--fontMainColor);
-  border: 0;
-  resize: none;
+  color: black;
+  border: 0
+}
+
+.inputSize, .textareaText {
+  border: 2px #303034 solid;
+  border-radius: 3px;
+
+}
+
+.inputSize:focus, .textareaText:focus {
+  outline: 0;
 }
 
 .checkInput {
@@ -74,7 +82,7 @@
   background: var(--bgButtonColor);
   padding: 23px;
   width: 100%;
-  color: var(--fontMainColor);
+  color: var(--fontSpecialColor);
 }
 
 .closeButton {
@@ -112,7 +120,6 @@
   z-index: 10;
   opacity: 1;
   pointer-events: all;
-
 }
 
 .link {

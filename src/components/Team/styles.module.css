@@ -43,14 +43,14 @@
 
 .line {
   height: 5px;
-  background: var(--bgHeaderColor);
+  background: var(--bgSliderScrollColor);
   margin: 5px 0;
   position: relative;
   border-radius: 5px;
 }
 
 .segment {
-  background: var(--bgTogglerColor);
+  background: var(--bgHeaderColor);
   position: absolute;
   height: 100%;
   top: 0;
@@ -71,7 +71,6 @@
 
 .nextBtn,
 .prevBtn {
-  border-width: 0;
   padding: 0;
   width: 2.5rem;
   height: 2.5rem;
@@ -80,6 +79,12 @@
   position: absolute;
   z-index: 10;
   cursor: pointer;
+  border: 0;
+  transition: filter .2s ease-in;
+}
+
+.nextBtn:hover, .prevBtn:hover {
+  filter: brightness(0.75);
 }
 
 .imgBlock {

@@ -11,7 +11,12 @@ function Main(props) {
     <>
       <Header path="/" />
       <Suspense fallback={<LazyLoading/>}>
-        <Team />
+        <div className={styles.block}>
+          <YMaps>
+            <Team />
+            <MapSection width="100%" />
+          </YMaps>
+        </div>
       </Suspense>
     </>
   );

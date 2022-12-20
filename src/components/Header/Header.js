@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import classnames from "classnames";
 import { ThemeToggler } from "../ThemeToggler/ThemeToggler";
+import { LanguageSelect } from "../LanguageButton/LanguageSelect";
+import { FormattedMessage } from "react-intl";
 
 function Header(props) {
   const isOnIndex = props.path === "/";
@@ -16,7 +18,7 @@ function Header(props) {
               [styles.disabled]: !isOnIndex,
             })}
           >
-            О нас
+            <FormattedMessage id="nav.aboutUs"/>
           </Link>
           <Link
             to="/projects"
@@ -24,10 +26,13 @@ function Header(props) {
               [styles.disabled]: isOnIndex,
             })}
           >
-            Проекты
+            <FormattedMessage id="nav.projects"/>
           </Link>
         </nav>
-        <ThemeToggler/>
+        <div className={styles.controlsGroup}>
+          <LanguageSelect/>
+          <ThemeToggler/>
+        </div>
       </header>
     </>
   );

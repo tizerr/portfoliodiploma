@@ -2,7 +2,10 @@ import styles from "./styles.module.css";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
 import closeButton from "../../img/closeButton.svg";
+import closeButtonDark from "../../img/closeButton-dark.svg";
+import {ThemeContext} from '../ThemeWrapper/ThemeWrapper'
 import { Link } from 'react-router-dom';
+import { FormattedMessage } from "react-intl";
 
 export const HiddenFeedback = ({ active, setActive }) => {
   useEffect(() => {
@@ -18,6 +21,7 @@ export const HiddenFeedback = ({ active, setActive }) => {
       window.removeEventListener("keydown", handleEsc);
     };
   }, []);
+
   return (
     <div
       id="modalWin"
@@ -33,12 +37,12 @@ export const HiddenFeedback = ({ active, setActive }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className={classNames(styles.formTitle)}>
-          Форма для связи с нами
+          <FormattedMessage id="feedback.title"/>
         </div>
         <form action="" onSubmit={(e) => e.preventDefault()}>
           <div className={classNames(styles.forInput, styles.mb30)}>
             <label htmlFor="nameInput" className={classNames(styles.labelSize)}>
-              <span>*&nbsp;</span>Как вас зовут
+              <span>*&nbsp;</span><FormattedMessage id="feedback.name"/>
             </label>
             <input
               type="text"
@@ -51,7 +55,7 @@ export const HiddenFeedback = ({ active, setActive }) => {
               htmlFor="emailInput"
               className={classNames(styles.labelSize)}
             >
-              <span>*&nbsp;</span>Ваш Email
+              <span>*&nbsp;</span><FormattedMessage id="feedback.email"/>
             </label>
             <input
               type="email"
@@ -64,7 +68,7 @@ export const HiddenFeedback = ({ active, setActive }) => {
               htmlFor="textareaInput"
               className={classNames(styles.labelArea)}
             >
-              <span>*&nbsp;</span>Ваше сообщение
+              <span>*&nbsp;</span><FormattedMessage id="feedback.message"/>
             </label>
             <textarea
               id="textareaInput"
@@ -88,19 +92,23 @@ export const HiddenFeedback = ({ active, setActive }) => {
               className={classNames(styles.labelArea)}
             >
               <a href="Politika.pdf" target="_blank" className={classNames(styles.link)}>
-                Даю согласие на обработку персональных данных
+                <FormattedMessage id="feedback.checkbox"/>
               </a>
             </label>
           </div>
           <button type="submit" className={classNames(styles.submitButton)} /*disabled={acept}*/>
-            Отправить
+            <FormattedMessage id="feedback.submit"/>
           </button>
 
           <button
             className={classNames(styles.closeButton)}
             onClick={() => setActive(false)}
           >
-            <img src={closeButton} alt="X" />
+            <ThemeContext.Consumer>
+              {({theme}) => (
+                <img src={theme === 'light' ? closeButton : closeButtonDark} alt="X" />
+              )}
+            </ThemeContext.Consumer>
           </button>
         </form>
       </section>
