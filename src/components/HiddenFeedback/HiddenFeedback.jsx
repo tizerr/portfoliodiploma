@@ -2,6 +2,7 @@ import styles from "./styles.module.css";
 import classNames from "classnames";
 import { useEffect, useState } from "react";
 import closeButton from "../../img/closeButton.svg";
+import { Link } from 'react-router-dom';
 
 export const HiddenFeedback = ({ active, setActive }) => {
   useEffect(() => {
@@ -86,7 +87,9 @@ export const HiddenFeedback = ({ active, setActive }) => {
               htmlFor="checkboxInput"
               className={classNames(styles.labelArea)}
             >
-              Даю согласие на обработку персональных данных
+              <a href="Politika.pdf" target="_blank" className={classNames(styles.link)}>
+                Даю согласие на обработку персональных данных
+              </a>
             </label>
           </div>
           <button type="submit" className={classNames(styles.submitButton)} /*disabled={acept}*/>
