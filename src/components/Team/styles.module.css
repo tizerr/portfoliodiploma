@@ -27,6 +27,20 @@
   margin-right: 30px;
 }
 
+@media(max-width: 500px) {
+  .slider > div > div > div > div {
+    
+  }
+
+  .slider > div > div {
+    overflow-x: hidden;
+    width: 80vw;
+    margin: auto;
+    padding: 0 60px;
+  }
+
+}
+
 .line {
   height: 5px;
   background: var(--bgHeaderColor);

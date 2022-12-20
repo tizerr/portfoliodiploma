@@ -32,6 +32,10 @@
   font-size: 20px;
 }
 
+.labelSize span, .labelArea span {
+  color: var(--fbRequiredFieldColor);
+}
+
 .inputSize {
   padding: 8px;
   font-size: 20px;
@@ -52,7 +56,8 @@
   font-size: 20px;
   background-color: var(--bgInputColor);
   color: var(--fontMainColor);
-  border: 0
+  border: 0;
+  resize: none;
 }
 
 .checkInput {
@@ -107,6 +112,7 @@
   z-index: 10;
   opacity: 1;
   pointer-events: all;
+
 }
 
 .link {

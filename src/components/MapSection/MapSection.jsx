@@ -20,7 +20,7 @@ export const MapSection = (props) => {
   }
 
   const [map, setMap] = useState();
-
+  
   const resizeMap = (map) => {
     if (!map) return;
     map.style.height = (map.offsetWidth * 0.6).toString() + "px";
@@ -35,7 +35,6 @@ export const MapSection = (props) => {
     <section className={styles.mapSection}>
       <div className={classNames(styles.title, styles.transfer__line)}>
         <h2 className={styles.title__name}>Контактная информация</h2>
-        <FeedbackModul />
       </div>
       <div className={styles.container}>
         <ul className={styles.list}>

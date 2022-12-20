@@ -1,9 +1,10 @@
 import Project from "../Project/Project.jsx";
 import Header from "../Header/Header.js";
+import LazyLoading from "../LazyLoading/LazyLoading.jsx"
 import { readyWork } from "../../mock/readyWork.js";
 import styles from "./styles.module.css";
 import { v4 } from "uuid";
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import classnames from "classnames";
 
 function addWorks(works, count) {
@@ -22,6 +23,7 @@ function Projects(props) {
   return (
     <>
       <Header path="projects" />
+      <Suspense fallback={<LazyLoading/>}>
       <div className={styles.block}>
         {visibleWorks.map((val) => {
           return (
@@ -45,6 +47,7 @@ function Projects(props) {
       >
         Показать еще
       </button>
+      </Suspense>
     </>
   );
 
