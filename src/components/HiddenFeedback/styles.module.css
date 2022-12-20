@@ -32,6 +32,10 @@
   font-size: 20px;
 }
 
+.labelSize span, .labelArea span {
+  color: var(--fbRequiredFieldColor);
+}
+
 .inputSize {
   padding: 8px;
   font-size: 20px;
