@@ -3,5 +3,6 @@
   "nav.projects": "Projects",
   "slider.title": "Our team",
   "map.title": "Contact info",
-  "map.contactBtn": "Contact us form"
+  "feedback.btn": "Contact us form",
+  "footer.name": "Arbuziki"
 }

@@ -1,13 +1,15 @@
 .feedbackButton {
   border: none;
-  background: var(--bgButtonColor);
+  background: transparent;
   padding: 20px 30px;
   border-radius: 2px;
   font-size: 1.3rem;
   font-weight: 500;
-  color: var(--fontMainColor);
+  color: var(--fontSpecialColor);
+  transition: outline .2s ease-out;
 }
 
 .feedbackButton:hover {
   cursor: pointer;
+  outline: var(--fontSpecialColor) 2px solid;
 }

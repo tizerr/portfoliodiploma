@@ -9,6 +9,7 @@ import nextarrDark from "../../img/next-arrow-dark.svg";
 import prevarrDark from "../../img/prev-arrow-dark.svg";
 import { v4 } from "uuid";
 import {ThemeContext} from "../ThemeWrapper/ThemeWrapper";
+import { FormattedMessage } from "react-intl";
 
 function mod(a, b) {
   if (a >= 0) return a % b;
@@ -88,7 +89,7 @@ function Team(props) {
 
   return (
     <div className={styles.slider}>
-      <h1 className={styles.title}>Наша команда</h1>
+      <h1 className={styles.title}><FormattedMessage id="slider.title"/></h1>
       <Slider {...sliderConfigs} ref={sliderRef}>
         {slideCards.map((obj) => {
           return (

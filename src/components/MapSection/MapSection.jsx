@@ -7,9 +7,10 @@ import placemarkActive from "../../img/placemarkActive.svg";
 import placemarkDark from "../../img/placemark-dark.svg";
 import placemarkActiveDark from "../../img/placemarkActive-dark.svg";
 
-import { FeedbackModul } from "../FeedbackModul/FeedbackModul";
+import { FeedbackModule } from "../FeedbackModule/FeedbackModule";
 import classNames from "classnames";
 import { ThemeContext } from "../ThemeWrapper/ThemeWrapper";
+import { FormattedMessage } from "react-intl";
 
 export const MapSection = (props) => {
   const [activeMember, setActiveMember] = useState(members[0].id);
@@ -34,8 +35,7 @@ export const MapSection = (props) => {
   return (
     <section className={styles.mapSection}>
       <div className={classNames(styles.title, styles.transfer__line)}>
-        <h2 className={styles.title__name}>Контактная информация</h2>
-        <FeedbackModul />
+        <h2 className={styles.title__name}><FormattedMessage id="map.title"/></h2>
       </div>
       <div className={styles.container}>
         <ul className={styles.list}>

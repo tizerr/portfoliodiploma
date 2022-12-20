@@ -65,6 +65,12 @@
   position: absolute;
   z-index: 10;
   cursor: pointer;
+  border: 0;
+  transition: filter .2s ease-in;
+}
+
+.nextBtn:hover, .prevBtn:hover {
+  filter: brightness(0.75);
 }
 
 .imgBlock {

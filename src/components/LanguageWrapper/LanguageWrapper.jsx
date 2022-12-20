@@ -4,31 +4,32 @@ import { IntlProvider } from "react-intl";
 import russian from '../../lang/ru.json';
 import english from '../../lang/en.json';
 
+let localeInit = navigator.language;
+let langInit;
+if (localeInit.startsWith('en')) {
+  langInit = english;
+  localeInit = 'en';
+} else if (localeInit.startsWith('ru')) {
+  langInit = russian;
+  localeInit = 'ru';
+}
+
 export const languages = {
   en: "en",
   ru: "ru",
 };
 
 export const LanguageContext = createContext({
-  languages: languages
+  locale: "",
+  selectLanguage: () => {}
 });
 
 export function LanguageWrapper(props) {
-  let localeInit;
-  useEffect(() => {
-    localeInit = navigator.locale;
-  }, []);
-  let langInit;
-  if (localeInit==="en") {
-    localeInit = english;
-  } else if (localeInit === "ru") {
-    localeInit = russian;
-  }
   const [locale, setLocale] = useState(localeInit);
   const [messages, setMessages] = useState(langInit);
 
-  function selectLanguage(e) {
-    const newLocale = e.target.value;
+  const selectLanguage = (locale) => {
+    const newLocale = locale;
     setLocale(newLocale);
     if (newLocale === 'en') {
       setMessages(english);

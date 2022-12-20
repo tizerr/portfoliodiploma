@@ -33,7 +33,6 @@
 .title {
   margin-bottom: 3rem;
   height: calc(60% * 0.8);
-  align-items: center;
 }
 
 .title__name {
@@ -77,9 +76,4 @@
   height: 1.5rem;
   min-height: 100%;
   font-weight: 800;
-}
-
-.transfer__line {
-  display: flex;
-  flex-wrap: wrap;
 }

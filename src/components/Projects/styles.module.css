@@ -14,7 +14,7 @@
   border-radius: 3px;
   background: var(--bgButtonColor);
   border: 0;
-  color: var(--fontMainColor);
+  color: var(--fontSpecialColor);
 }
 
 .hideBtn {

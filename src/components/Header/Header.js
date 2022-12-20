@@ -29,8 +29,10 @@ function Header(props) {
             <FormattedMessage id="nav.projects"/>
           </Link>
         </nav>
-        <ThemeToggler/>
-        <LanguageSelect/>
+        <div className={styles.controlsGroup}>
+          <LanguageSelect/>
+          <ThemeToggler/>
+        </div>
       </header>
     </>
   );

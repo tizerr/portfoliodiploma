@@ -3,5 +3,6 @@
   "nav.projects": "Проекты",
   "slider.title": "Наша команда",
   "map.title": "Контактная информация",
-  "map.contactBtn": "Форма обратной связи с нами"
+  "feedback.btn": "Форма обратной связи с нами",
+  "footer.name": "Арбузики"
 }
