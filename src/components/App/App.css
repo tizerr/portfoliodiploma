@@ -39,6 +39,7 @@ body {
   --fontMainColor: #16161A;
   --fontSecondaryColor: #85868C;
   --fbRequiredFieldColor: #bf1d1d;
+  --lazyLoaderColor: #454545;
 }
 
 .themeDark {
@@ -50,4 +51,5 @@ body {
   --fontMainColor: #E2E2E2;
   --fontSecondaryColor: #85868C;
   --fbRequiredFieldColor: #bf1d1d;
+  --lazyLoaderColor: #d1d1d1;
 }
