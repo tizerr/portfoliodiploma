@@ -23,7 +23,7 @@ function Project(props) {
           <p>{props.kind}</p>
         </div>
         <p className={styles.text}>{props.description}</p>
-        <p>
+        <div>
           <ul className={styles.developmentStack}>
           {props.developmentStack.map((val) => {
             return (
@@ -33,7 +33,7 @@ function Project(props) {
             );
           })}
           </ul>
-        </p>
+        </div>
       </div>
     </>
   );

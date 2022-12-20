@@ -8,6 +8,7 @@ import { useContext, useState, Suspense } from "react";
 import classnames from "classnames";
 import { LanguageContext } from "../LanguageWrapper/LanguageWrapper";
 import { membersEn, membersRU } from "../../mock/mapMembers";
+import { FormattedMessage } from "react-intl";
 
 function addWorks(works, count) {
   let visibleWorks = [];
@@ -49,7 +50,7 @@ function Projects(props) {
             setCount(count <= worksCount ? count + 2 : count);
           }}
         >
-          Показать еще
+          <FormattedMessage id="projects.btn"/>
         </button>
       </Suspense>
     </>
