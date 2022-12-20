@@ -32,20 +32,24 @@ body {
 
 .themeLight {
   --bgMainColor: white;
-  --bgHeaderColor: #EBECF0;
-  --bgButtonColor: #D2D3D9;
+  --bgHeaderColor: #531670;
+  --bgButtonColor: #531670;
   --bgTogglerColor: #A2A3AB;
+  --bgSliderScrollColor: #ced0d4;
   --bgInputColor: white;
-  --fontMainColor: #16161A;
+  --fontMainColor: white;
+  --fontSpecialColor: white;
   --fontSecondaryColor: #85868C;
 }
 
 .themeDark {
   --bgMainColor: #16161A;
-  --bgHeaderColor: #222225;
-  --bgButtonColor: #333338;
+  --bgHeaderColor: #6B0C6D;
+  --bgButtonColor: #6B0C6D;
   --bgTogglerColor: #3C3C44;
+  --bgSliderScrollColor: #ced0d4;
   --bgInputColor: #333338;
   --fontMainColor: #E2E2E2;
+  --fontSpecialColor: white;
   --fontSecondaryColor: #85868C;
 }

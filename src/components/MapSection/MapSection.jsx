@@ -67,7 +67,7 @@ export const MapSection = (props) => {
             </li>
           ))}
         </ul>
-        <div style={{ width: "60%" }} ref={setMap}>
+        <div className={styles.mapDiv} ref={setMap}>
           <Map
             defaultState={{
               center: [55.683147, 42.180271],
