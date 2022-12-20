@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 import classNames from "classnames";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import closeButton from "../../img/closeButton.svg";
 
 export const HiddenFeedback = ({ active, setActive }) => {
@@ -17,7 +17,6 @@ export const HiddenFeedback = ({ active, setActive }) => {
       window.removeEventListener("keydown", handleEsc);
     };
   }, []);
-
   return (
     <div
       id="modalWin"
@@ -38,37 +37,41 @@ export const HiddenFeedback = ({ active, setActive }) => {
         <form action="" onSubmit={(e) => e.preventDefault()}>
           <div className={classNames(styles.forInput, styles.mb30)}>
             <label htmlFor="nameInput" className={classNames(styles.labelSize)}>
-              Как вас зовут
+              <span>*&nbsp;</span>Как вас зовут
             </label>
             <input
               type="text"
               id="nameInput"
               className={classNames(styles.inputSize)}
+              required
             />
 
             <label
               htmlFor="emailInput"
               className={classNames(styles.labelSize)}
             >
-              Ваш Email
+              <span>*&nbsp;</span>Ваш Email
             </label>
             <input
               type="email"
               id="emailInput"
               className={classNames(styles.inputSize)}
+              required
             />
 
             <label
               htmlFor="textareaInput"
               className={classNames(styles.labelArea)}
             >
-              Ваше сообщение
+              <span>*&nbsp;</span>Ваше сообщение
             </label>
             <textarea
               id="textareaInput"
               cols="30"
               rows="10"
               className={classNames(styles.textareaText)}
+              required
+
             ></textarea>
           </div>
 
@@ -77,6 +80,7 @@ export const HiddenFeedback = ({ active, setActive }) => {
               type="checkbox"
               id="checkboxInput"
               className={classNames(styles.checkInput)}
+              required
             />
             <label
               htmlFor="checkboxInput"
@@ -85,7 +89,7 @@ export const HiddenFeedback = ({ active, setActive }) => {
               Даю согласие на обработку персональных данных
             </label>
           </div>
-          <button type="submit" className={classNames(styles.submitButton)}>
+          <button type="submit" className={classNames(styles.submitButton)} /*disabled={acept}*/>
             Отправить
           </button>
 
