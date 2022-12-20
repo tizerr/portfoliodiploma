@@ -20,7 +20,7 @@ export const MapSection = (props) => {
   }
 
   const [map, setMap] = useState();
-
+  
   const resizeMap = (map) => {
     if (!map) return;
     map.style.height = (map.offsetWidth * 0.6).toString() + "px";

@@ -20,3 +20,11 @@
 .hideBtn {
   visibility: hidden;
 }
+
+@media (max-width: 760px) {
+  .block {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+}
