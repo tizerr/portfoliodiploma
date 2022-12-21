@@ -5,8 +5,7 @@
 
 .imgBlock {
   width: 100%;
-  height: 50vh;
-  overflow-y: hidden;
+  margin: auto;
   border-radius: 5px;
 }
 
@@ -66,6 +65,10 @@ ul {
   margin: 0 0 0 5px;
 }
 
+.developers li:first-child {
+  margin: 0;
+}
+
 .developers span {
   font-size: 1.8rem;
   margin: 0 8px;
@@ -87,4 +90,15 @@ ul {
 .helpText {
   font-size: 0.8rem;
   color: #85868c;
+}
+
+@media (max-width: 760px) {
+  .block {
+    width: 90vw;
+    margin: 20px 0;
+  }
+
+  .imgBlock {
+    width: 80%;
+  }
 }

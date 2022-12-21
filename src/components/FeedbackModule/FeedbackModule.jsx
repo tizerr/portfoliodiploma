@@ -2,8 +2,9 @@ import styles from "./styles.module.css";
 import classNames from "classnames";
 import { HiddenFeedback } from "../HiddenFeedback/HiddenFeedback";
 import { useState } from "react";
+import { FormattedMessage } from "react-intl";
 
-export const FeedbackModul = () => {
+export const FeedbackModule = () => {
   const [modalActive, setModalActive] = useState(false);
 
   return (
@@ -12,7 +13,7 @@ export const FeedbackModul = () => {
         className={classNames(styles.feedbackButton)}
         onClick={() => setModalActive(true)}
       >
-        Форма обратной связи с нами
+        <FormattedMessage id="feedback.btn"/>
       </button>
       <HiddenFeedback active={modalActive} setActive={setModalActive} />
     </section>

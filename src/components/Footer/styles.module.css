@@ -1,18 +1,19 @@
-p {
+.name {
   margin: 0 0 15px 0;
   font-size: 1.7rem;
   text-align: left;
   padding-right: 30px;
+  color: var(--fontSpecialColor);
 }
 
-a {
+.link {
   font-size: 1.5rem;
-  color: black;
+  color: var(--fontSpecialColor);
 }
 
 .footer {
-  margin: 4rem 0 0 0;
-  padding: 20px 30px;
+  margin-top: 4rem;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,22 +27,6 @@ a {
 
 .links > * {
 /*  margin: 0 20px 0 0;*/
-}
-
-.feedback {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.egg {
-  opacity: 0;
-  cursor: pointer;
-  transition: all 500ms ease-in 0s;
-  margin: 0 10px 0 0;
-}
-
-.egg:hover {
-  opacity: 1;
 }
 
 .imgBlock {

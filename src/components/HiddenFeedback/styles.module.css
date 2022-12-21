@@ -1,7 +1,7 @@
 .formSection {
   max-width: 560px;
   padding: 48px;
-  background: var(--bgHeaderColor);
+  background: var(--bgFeedbackColor);
   border-radius: 2px;
   position: relative;
   z-index: 2;
@@ -10,7 +10,7 @@
 }
 
 .formTitle {
-  font-size: 40px;
+  font-size: 3rem;
   margin-bottom: 40px;
   color: var(--fontMainColor);
   text-align: center;
@@ -20,6 +20,7 @@
   display: grid;
   grid-template-columns: 30% 70%;
   grid-row-gap: 30px;
+  grid-column-gap: 5px;
 }
 
 .mb30 {
@@ -32,12 +33,16 @@
   font-size: 20px;
 }
 
+.labelSize span, .labelArea span {
+  color: var(--fbRequiredFieldColor);
+}
+
 .inputSize {
   padding: 8px;
   font-size: 20px;
   background: var(--bgInputColor);
-  color: var(--fontMainColor);
   border: 0;
+  color: black;
 }
 
 .labelArea {
@@ -45,14 +50,24 @@
 }
 
 .textareaText {
-  max-width: 100%;
+  resize: vertical;
   min-height: 40px;
   max-height: 125px;
   padding: 8px;
   font-size: 20px;
   background-color: var(--bgInputColor);
-  color: var(--fontMainColor);
+  color: black;
   border: 0
+}
+
+.inputSize, .textareaText {
+  border: 2px #303034 solid;
+  border-radius: 3px;
+
+}
+
+.inputSize:focus, .textareaText:focus {
+  outline: 0;
 }
 
 .checkInput {
@@ -65,11 +80,11 @@
 
 .submitButton {
   border: none;
-  font-size: 28px;
+  font-size: 2rem;
   background: var(--bgButtonColor);
   padding: 23px;
   width: 100%;
-  color: var(--fontMainColor);
+  color: var(--fontSpecialColor);
 }
 
 .closeButton {
@@ -94,21 +109,37 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
+  /*display: flex;*/
+  /*align-items: center;
+  justify-content: center;*/
   opacity: 0;
   pointer-events: none;
   transition: all 0.09s ease-out;
 }
 
 .modal.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow-y: hidden;
   z-index: 10;
   opacity: 1;
   pointer-events: all;
 }
 
+
+@media(max-width: 540px) {
+  .formTitle {
+      font-size: 2.4rem;
+  }
+
+  .forInput {
+    grid-template-columns: ;
+  }
+}
+
 .link {
   font-size: inherit;
 }
+
