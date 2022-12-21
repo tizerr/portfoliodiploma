@@ -141,5 +141,10 @@
 
 .link {
   font-size: inherit;
+
+  color: var(--fontMainColor);
 }
+
+}
+
 
