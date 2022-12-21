@@ -10,7 +10,7 @@ const slideCardsRu = [
   },
   {
     "full-name": "Шахмар Абдуллаев",
-    "photo": "./img/projects/person-photo.png",
+    "photo": "./img/projects/shah-person-photo.png",
     "description":"Меня зовут Шахмар! Я ученик It-класса. В настоящее время популярность It-сферы развивается с огромной скоростью. И я стараюсь не отставать!",
     "dev-stack": ["HTML", "CSS", "JavaScript", "React"],
     "gitHub": "https://github.com/abdullZiba",
@@ -19,6 +19,9 @@ const slideCardsRu = [
   {
     "full-name": "Илья Плесский",
     "photo": "./img/projects/person-photo.png",
+
+    "description":"Меня зовут Илья! Я ученик It-класса. В настоящее время популярность It-сферы развивается с огромной скоростью. И я стараюсь не отставать!",
+
     "description": "Программирование - мое хобби. Я пробую разные IT направления, чтобы найти ту область, с которой я свяжу свою жизнь",
     "dev-stack": ["HTML", "CSS", "JavaScript", "React"],
     "gitHub": "https://github.com/tizerr",
@@ -48,6 +51,7 @@ const slideCardsEn = [
     "full-name": "Plessky Ilya",
     "photo": "./img/projects/person-photo.png",
     "description": "Programming is my hobby. I'm trying out different IT fields to find the one I want to do with my life.",
+
     "dev-stack": ["HTML", "CSS", "JavaScript", "React"],
     "gitHub": "https://github.com/tizerr",
     "telegram": "https://t.me/t1z3rr"

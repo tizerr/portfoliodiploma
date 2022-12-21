@@ -1,7 +1,7 @@
 export const readyWorkRU = [
 
     {
-        previewPath: "./img/projects/project-preview.png",
+        previewPath: "./img/projects/shah_fir_proj.png",
         name: "Сайт для регистрации и мониторинга мероприятий на IT-полигоне",
         link: "http://t96544sc.beget.tech",
         author: ["Шахмар Абдуллаев"],
@@ -10,7 +10,7 @@ export const readyWorkRU = [
         technology: ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
     },
     {
-        previewPath: "./img/projects/project-preview.png",
+        previewPath: "./img/projects/shah_sec_proj.png",
         name: "Парсер Ozon'a",
         link: undefined,
         author: ["Шахмар Абдуллаев"],
