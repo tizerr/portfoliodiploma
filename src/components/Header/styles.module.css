@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header nav {
@@ -24,4 +25,51 @@
 .disabled {
   color: var(--fontSecondaryColor);
   border: 0;
+}
+
+/**/
+.burger_btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  height: 16px;
+}
+
+.burger_btn span {
+  position: relative;
+  height: 2px;
+  width: 20px;
+  background-color: black;
+}
+
+.burger_btn span::after,
+.burger_btn span::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: black;
+}
+
+.burger_btn span::after {
+  top: 6px;
+}
+
+.burger_btn span::before {
+  bottom: 6px;
+}
+
+/**/
+.burger_btn.active_btn span {
+  transform: rotate(45deg);
+}
+
+.burger_btn.active_btn span::after {
+  transform: rotate(-90deg);
+  top: 0;
+}
+
+.burger_btn.active_btn span::before {
+  transform: scale(0);
 }
