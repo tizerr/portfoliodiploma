@@ -1,7 +1,7 @@
 .formSection {
   max-width: 560px;
   padding: 48px;
-  background: var(--bgHeaderColor);
+  background: var(--bgFeedbackColor);
   border-radius: 2px;
   position: relative;
   z-index: 2;
@@ -33,13 +33,16 @@
   font-size: 20px;
 }
 
+.labelSize span, .labelArea span {
+  color: var(--fbRequiredFieldColor);
+}
+
 .inputSize {
   padding: 8px;
   font-size: 20px;
   background: var(--bgInputColor);
-  color: var(--fontMainColor);
   border: 0;
-  height: 1rem;
+  color: black;
 }
 
 .labelArea {
@@ -47,14 +50,24 @@
 }
 
 .textareaText {
-  max-width: 100%;
+  resize: vertical;
   min-height: 40px;
   max-height: 125px;
   padding: 8px;
   font-size: 20px;
   background-color: var(--bgInputColor);
-  color: var(--fontMainColor);
+  color: black;
   border: 0
+}
+
+.inputSize, .textareaText {
+  border: 2px #303034 solid;
+  border-radius: 3px;
+
+}
+
+.inputSize:focus, .textareaText:focus {
+  outline: 0;
 }
 
 .checkInput {
@@ -69,8 +82,9 @@
   border: none;
   font-size: 2rem;
   background: var(--bgButtonColor);
-  padding: 3%;
-  color: var(--fontMainColor);
+  padding: 23px;
+  width: 100%;
+  color: var(--fontSpecialColor);
 }
 
 .closeButton {
@@ -114,6 +128,7 @@
   pointer-events: all;
 }
 
+
 @media(max-width: 540px) {
   .formTitle {
       font-size: 2.4rem;
@@ -123,3 +138,8 @@
     grid-template-columns: ;
   }
 }
+
+.link {
+  font-size: inherit;
+}
+

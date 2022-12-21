@@ -23,13 +23,13 @@ export function ThemeWrapper(props) {
     switch (theme) {
       case themes.light:
         document.body.className = 'themeLight';
-        document.getElementById('btn_sun').classList.remove(styles.button__icon_disabled)
-        document.getElementById('btn_moon').classList.add(styles.button__icon_disabled)
+        document.getElementById('btn_sun').classList.remove(styles.hidden)
+        document.getElementById('btn_moon').classList.add(styles.hidden)
         break;
       case themes.dark:
         document.body.className = 'themeDark';
-        document.getElementById('btn_moon').classList.remove(styles.button__icon_disabled)
-        document.getElementById('btn_sun').classList.add(styles.button__icon_disabled)
+        document.getElementById('btn_moon').classList.remove(styles.hidden)
+        document.getElementById('btn_sun').classList.add(styles.hidden)
         break;
       default:
         break;

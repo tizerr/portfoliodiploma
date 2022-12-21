@@ -1,17 +1,21 @@
-import styles from "./MapSection.module.css";
+import styles from "./styles.module.css";
 import { Map, Placemark } from "@pbe/react-yandex-maps";
-import { useEffect, useState } from "react";
-import { members } from "../../mock/mapMembers";
+import { useContext, useEffect, useState } from "react";
+import { membersEn, membersRU } from "../../mock/mapMembers";
 import placemark from "../../img/placemark.svg";
 import placemarkActive from "../../img/placemarkActive.svg";
 import placemarkDark from "../../img/placemark-dark.svg";
 import placemarkActiveDark from "../../img/placemarkActive-dark.svg";
 
-import { FeedbackModul } from "../FeedbackModul/FeedbackModul";
+import { FeedbackModule } from "../FeedbackModule/FeedbackModule";
 import classNames from "classnames";
 import { ThemeContext } from "../ThemeWrapper/ThemeWrapper";
+import { FormattedMessage } from "react-intl";
+import { LanguageContext } from "../LanguageWrapper/LanguageWrapper";
+import { slideCardsEn, slideCardsRu } from "../../mock/sliderCards";
 
 export const MapSection = (props) => {
+  const members = (useContext(LanguageContext).locale === 'en') ? membersEn : membersRU
   const [activeMember, setActiveMember] = useState(members[0].id);
 
   function click(e, key) {
@@ -20,7 +24,7 @@ export const MapSection = (props) => {
   }
 
   const [map, setMap] = useState();
-  
+
   const resizeMap = (map) => {
     if (!map) return;
     map.style.height = (map.offsetWidth * 0.6).toString() + "px";
@@ -34,8 +38,7 @@ export const MapSection = (props) => {
   return (
     <section className={styles.mapSection}>
       <div className={classNames(styles.title, styles.transfer__line)}>
-        <h2 className={styles.title__name}>Контактная информация</h2>
-        <FeedbackModul />
+        <h2 className={styles.title__name}><FormattedMessage id="map.title"/></h2>
       </div>
       <div className={styles.container}>
         <ul className={styles.list}>
@@ -67,7 +70,7 @@ export const MapSection = (props) => {
             </li>
           ))}
         </ul>
-        <div style={{ width: "60%" }} ref={setMap}>
+        <div className={styles.mapDiv} ref={setMap}>
           <Map
             defaultState={{
               center: [55.683147, 42.180271],
@@ -87,11 +90,6 @@ export const MapSection = (props) => {
                   iconImageHref: `${
                     m.id === activeMember ? placemarkActive : placemark
                   }`
-                  // iconImageHref: `./img/${
-                  //   m.id === activeMember
-                  //     ? "placemarkActive.svg"
-                  //     : "placemark.svg"
-                  // }`
                 }}
               />
             ))}
