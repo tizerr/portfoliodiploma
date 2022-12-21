@@ -1,14 +1,17 @@
 import Slider from "react-slick";
 import styles from "./styles.module.css";
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import TeamMember from "../TeamMember/TeamMember.js";
-import slideCards from "../../mock/sliderCards.js";
+import {slideCardsRu} from "../../mock/sliderCards.js";
+import {slideCardsEn} from "../../mock/sliderCards.js";
 import nextarr from "../../img/next-arrow.svg";
 import prevarr from "../../img/prev-arrow.svg";
 import nextarrDark from "../../img/next-arrow-dark.svg";
 import prevarrDark from "../../img/prev-arrow-dark.svg";
 import { v4 } from "uuid";
 import {ThemeContext} from "../ThemeWrapper/ThemeWrapper";
+import { FormattedMessage } from "react-intl";
+import { LanguageContext } from "../LanguageWrapper/LanguageWrapper";
 
 function mod(a, b) {
   if (a >= 0) return a % b;
@@ -20,6 +23,7 @@ function mod(a, b) {
 function Team(props) {
   const sliderRef = useRef(null);
   const [slide, setSlide] = useState(0);
+  const slideCards = (useContext(LanguageContext).locale === 'en') ? slideCardsEn : slideCardsRu
 
   function SampleNextArrow(props) {
     const { styles, img_light, img_dark } = props;
@@ -88,7 +92,7 @@ function Team(props) {
 
   return (
     <div className={styles.slider}>
-      <h1 className={styles.title}>Наша команда</h1>
+      <h1 className={styles.title}><FormattedMessage id="slider.title"/></h1>
       <Slider {...sliderConfigs} ref={sliderRef}>
         {slideCards.map((obj) => {
           return (

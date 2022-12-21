@@ -1,8 +1,9 @@
+// NOT USED
 export const footerMembers = [
 
     {
         id: 1,
-        name: 'Илья Плесский',
+        name: 'Плесский Илья',
         tel: '+7 925 534 55 43',
         social: {
             git: 'tizerr',

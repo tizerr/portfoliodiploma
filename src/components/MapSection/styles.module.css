@@ -5,26 +5,29 @@
 
 .mapSection {
   width: 100%;
-  margin: 8rem 0 0 0;
+  margin: 3rem 0 0;
 }
 
 .mapDiv {
   width: 65%;
 }
 
-@media (max-width: 1000px) {
-  .mapSection {
-    margin: 5rem 0;
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+
+  .container > div:last-child {
+    align-self: center;
+  }
+
+  .container > div {
+    margin: 0 0 40px 0;
   }
 }
 
 @media (max-width: 675px) {
-  .container {
-    flex-wrap: wrap;
-  }
-  .list {
-    width: 100%;
-  }
   .mapDiv {
     width: 100%;
   }
@@ -33,13 +36,12 @@
 .title {
   margin-bottom: 3rem;
   height: calc(60% * 0.8);
-  align-items: center;
 }
 
 .title__name {
   font-size: 2rem;
   font-weight: 700;
-  margin: 0;
+  margin: 0 15px 2rem 0;
   color: var(--fontMainColor)
 }
 
@@ -77,9 +79,4 @@
   height: 1.5rem;
   min-height: 100%;
   font-weight: 800;
-}
-
-.transfer__line {
-  display: flex;
-  flex-wrap: wrap;
 }
