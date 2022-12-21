@@ -6,6 +6,7 @@ import styles from "./styles.module.css";
 import { v4 } from "uuid";
 import { useState, Suspense } from "react";
 import classnames from "classnames";
+import search from "../../img/search-icon.svg"
 
 function addWorks(works, count) {
   let visibleWorks = [];
@@ -14,6 +15,9 @@ function addWorks(works, count) {
     visibleWorks.push(works[i]);
   }
   return visibleWorks;
+}
+function sortWorsk(works, v) {
+  
 }
 
 function Projects(props) {
@@ -25,6 +29,18 @@ function Projects(props) {
       <Header path="projects" />
       <Suspense fallback={<LazyLoading/>}>
       <div className={styles.block}>
+      <div className={styles.projectsHeader}>
+        <h2 className={styles.title}>Наши проекты</h2>
+        <div className={styles.searchForm}>
+          <input className={styles.search} id="search" type="text" onChange={(e) => {console.log(e.target.value)}}/>
+          <label htmlFor="search">
+            <div className={styles.imgBlock}>
+              <img src={search} alt=""/>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div className={styles.prjectsBlock}>
         {visibleWorks.map((val) => {
           return (
             <Project
@@ -47,6 +63,7 @@ function Projects(props) {
       >
         Показать еще
       </button>
+      </div>
       </Suspense>
     </>
   );

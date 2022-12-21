@@ -1,9 +1,9 @@
 .block {
   width: 40vw;
-  margin: 20px 3vw;
+  margin: 20px 0;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 880px) {
   .block {
     width: 90vw;
     margin: 20px 0;
@@ -53,29 +53,29 @@ ul {
 .title {
   color: var(--fontMainColor);
   text-align: start;
-  font-size: 2.7rem;
+  font-size: 2.3rem;
   margin: 15px 0;
 }
 
 .developers {
-  font-size: 1.2rem;
   color: var(--fontMainColor);
   display: flex;
   justify-content: start;
   align-items: center;
 }
 
-.developers * {
+.developers > * {
   margin: 0;
+  font-size: 1.2rem;
 }
 
 .developers li {
-  margin: 0 0 0 5px;
+  margin: 0 5px 0 0;
 }
 
 .developers span {
   font-size: 1.8rem;
-  margin: 0 8px;
+  margin: 0 8px 0 3px;
 }
 
 .subTitle {
@@ -94,4 +94,10 @@ ul {
 .helpText {
   font-size: 0.8rem;
   color: #85868c;
+}
+
+@media (max-width: 1100px) {
+  .title {
+    font-size: 1.9rem;
+  }
 }

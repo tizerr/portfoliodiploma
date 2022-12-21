@@ -11,20 +11,15 @@ function Main(props) {
     <>
       <Header path="/" />
       <Suspense fallback={<LazyLoading/>}>
-        <Team />
-      </Suspense>
-    </>
-  );
-}
-
-/*
-      <Suspense fallback={<LazyLoading/>}>
         <div className={styles.block}>
           <YMaps>
             <Team />
             <MapSection width="100%" />
           </YMaps>
         </div>
-      </Suspense>*/
+      </Suspense>
+    </>
+  );
+}
 
 export default Main;
