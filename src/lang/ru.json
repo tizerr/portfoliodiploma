@@ -1,0 +1,15 @@
+{
+  "nav.aboutUs": "О нас",
+  "nav.projects": "Проекты",
+  "slider.title": "Наша команда",
+  "map.title": "Контактная информация",
+  "projects.btn": "Показать ещё",
+  "feedback.btn": "Форма обратной связи с нами",
+  "feedback.title": "Форма для связи с нами",
+  "feedback.name": "Как вас зовут",
+  "feedback.email": "Ваш Email",
+  "feedback.message": "Ваше сообщение",
+  "feedback.checkbox": "Даю согласие на обработку персональных данных",
+  "feedback.submit": "Отправить",
+  "footer.name": "Арбузики"
+}
