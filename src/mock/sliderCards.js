@@ -41,7 +41,7 @@ const slideCardsEn = [
   },
   {
     "full-name": "Shahmar Abdullayev",
-    "photo": "./img/projects/person-photo.png",
+    "photo": "./img/projects/shah-person-photo.png",
     "description":"My name is Shakhmar! I am a student of the It-sphere. Nowadays, the popularity of the It-sphere is developing at a tremendous rate. And I'm trying to keep up!",
     "dev-stack": ["HTML", "CSS", "JavaScript", "React"],
     "gitHub": "https://github.com/abdullZiba",

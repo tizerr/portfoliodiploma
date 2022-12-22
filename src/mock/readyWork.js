@@ -77,7 +77,7 @@ export const readyWorkRU = [
 export const readyWorkEn = [
 
     {
-        previewPath: "./img/projects/project-preview.png",
+        previewPath: "./img/projects/shah_fir_proj.png",
         name: "Website for registering and monitoring events at the IT training ground",
         link: "http://t96544sc.beget.tech",
         author: ["Shahmar Abdullayev"],
@@ -86,7 +86,7 @@ export const readyWorkEn = [
         technology: ["HTML", "CSS", "JavaScript", "PHP", "SQL"],
     },
     {
-        previewPath: "./img/projects/project-preview.png",
+        previewPath: "./img/projects/shah_sec_proj.png",
         name: "Ozon parser",
         link: undefined,
         author: ["Shahmar Abdullayev"],
