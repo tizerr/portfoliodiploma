@@ -90,6 +90,7 @@ function Team(props) {
     left: `${(100 * slide) / (slideCards.length)}%`,
   };
 
+
   return (
     <div className={styles.slider}>
       <h1 className={styles.title}><FormattedMessage id="slider.title"/></h1>
