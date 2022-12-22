@@ -4,9 +4,9 @@
 
 .imgBlock {
   width: 100%;
-  max-height: 50vh;
-  overflow-y: hidden;
   border-radius: 3px;
+  max-height: 60vh  ;
+  overflow-y: hidden;
 }
 
 .imgBlock img {

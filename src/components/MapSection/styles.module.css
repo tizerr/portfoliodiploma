@@ -5,7 +5,7 @@
 
 .mapSection {
   width: 100%;
-  margin: 3rem 0;
+  margin: 3rem 0 0;
 }
 
 .mapDiv {
@@ -27,22 +27,15 @@
   }
 }
 
-/*@media (max-width: 675px) {
-  .container {
-    flex-wrap: wrap;
-  }
-  .list {
-    width: 100%;
-  }
+@media (max-width: 675px) {
   .mapDiv {
     width: 100%;
   }
-}*/
+}
 
 .title {
   margin-bottom: 3rem;
   height: calc(60% * 0.8);
-  align-items: center;
 }
 
 .title__name {
@@ -86,9 +79,4 @@
   height: 1.5rem;
   min-height: 100%;
   font-weight: 800;
-}
-
-.transfer__line {
-  display: flex;
-  flex-wrap: wrap;
 }

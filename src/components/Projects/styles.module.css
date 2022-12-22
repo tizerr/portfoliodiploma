@@ -1,11 +1,12 @@
 .block {
-  width: 85vw;
+  width: 90vw;
   margin: auto;
 }
 
 .projectsHeader {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .searchForm {
@@ -19,6 +20,7 @@
 
 .search {
   border: 0;
+  background: none;
   border-bottom: 2px solid var(--bgButtonColor)
 }
 
@@ -38,17 +40,18 @@
   border-radius: 3px;
   background: var(--bgButtonColor);
   border: 0;
-  color: var(--fontMainColor);
+  color: var(--fontSpecialColor);
 }
 
 .hideBtn {
-  visibility: hidden;
+  display: none;
 }
 
 .title {
   margin: 20px 0;
   text-align: left;
   font-size: 2rem;
+  color: var(--fontMainColor);
 }
 
 .imgBlock {
@@ -66,5 +69,11 @@
   .prjectsBlock {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 1.7rem;
   }
 }
