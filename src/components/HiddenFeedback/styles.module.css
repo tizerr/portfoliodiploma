@@ -103,16 +103,13 @@
 }
 
 .modal {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: #16161a;
   position: fixed;
   top: 0;
   left: 0;
   display: none;
-  /*display: flex;*/
-  /*align-items: center;
-  justify-content: center;*/
   opacity: 0;
   pointer-events: none;
   transition: all 0.09s ease-out;
@@ -144,7 +141,3 @@
 
   color: var(--fontMainColor);
 }
-
-}
-
-

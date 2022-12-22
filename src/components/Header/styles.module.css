@@ -45,7 +45,7 @@
   position: relative;
   height: 2px;
   width: 20px;
-  background-color: black;
+  background-color: var(--menuFontColor);
 }
 
 .burger_btn span::after,
@@ -54,7 +54,7 @@
   position: absolute;
   height: 2px;
   width: 20px;
-  background-color: black;
+  background-color: var(--menuFontColor)
 }
 
 .burger_btn span::after {

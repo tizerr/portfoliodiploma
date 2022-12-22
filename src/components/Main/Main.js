@@ -22,14 +22,4 @@ function Main(props) {
   );
 }
 
-/*
-      <Suspense fallback={<LazyLoading/>}>
-        <div className={styles.block}>
-          <YMaps>
-            <Team />
-            <MapSection width="100%" />
-          </YMaps>
-        </div>
-      </Suspense>*/
-
 export default Main;

@@ -60,17 +60,16 @@
 }
 
 .nextBtn {
-  top: -15%;
   right: 0;
 }
 
 .prevBtn {
-  top: -15%;
   right: 3.4375rem;
 }
 
 .nextBtn,
 .prevBtn {
+  top: -70px;
   padding: 0;
   width: 2.5rem;
   height: 2.5rem;
@@ -103,4 +102,22 @@
   margin: 20px 0;
   font-size: 3rem;
   color: var(--fontMainColor);
+}
+
+
+@media(max-width: 700px) {
+  .nextBtn,
+  .prevBtn {
+    top: -55px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
 }

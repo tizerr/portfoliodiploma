@@ -4,6 +4,8 @@
 
 body {
   background-color: var(--bgMainColor);
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 @font-face {
@@ -17,6 +19,11 @@ body {
   font-family: "YS", sans-serif;
 }
 
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
 
 @media (max-width: 1000px) {
   :root {
@@ -43,6 +50,7 @@ body {
   --bgFeedbackColor: white;
   --fbRequiredFieldColor: #bf1d1d;
   --lazyLoaderColor: #454545;
+  --menuFontColor: white;
 }
 
 .themeDark {
@@ -58,4 +66,5 @@ body {
   --bgFeedbackColor: #303034;
   --fbRequiredFieldColor: #bf1d1d;
   --lazyLoaderColor: #d1d1d1;
+  --menuFontColor: #e6e6f2;
 }

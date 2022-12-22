@@ -5,6 +5,8 @@
 .imgBlock {
   width: 100%;
   border-radius: 3px;
+  max-height: 60vh  ;
+  overflow-y: hidden;
 }
 
 .imgBlock img {

@@ -18,40 +18,15 @@ function Header(props) {
     <>
       <header className={styles.header}>
         <nav>
-
           <div className={classnames(styles.burger_btn)} onClick={() => setMenuActive(!menuActive)}>
             <span/>
           </div>
-          
-          {/* <Link
-            to="/"
-            className={classnames(styles.link, {
-              [styles.disabled]: !isOnIndex,
-            })}
-          >
-            <FormattedMessage id="nav.aboutUs"/>
-          </Link>
-          <Link
-            to="/projects"
-            className={classnames(styles.link, {
-              [styles.disabled]: isOnIndex,
-            })}
-          >
-
-            Проекты
-          </Link> */}
-        </nav>
-        <ThemeToggler/>
-        <Menu active={menuActive} setActive={setMenuActive} OnIndex={isOnIndex}/>
-
-            <FormattedMessage id="nav.projects"/>
-          </Link>
+          <Menu active={menuActive} setActive={setMenuActive} OnIndex={isOnIndex}/>
         </nav>
         <div className={styles.controlsGroup}>
           <LanguageSelect/>
           <ThemeToggler/>
         </div>
-
       </header>
     </>
   );
