@@ -5,7 +5,6 @@
 body {
   background-color: var(--bgMainColor);
   min-height: 100vh;
-  min-width: 100vw;
 }
 
 @font-face {
