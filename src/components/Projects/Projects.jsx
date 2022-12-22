@@ -37,14 +37,6 @@ function Projects(props) {
       <div className={styles.block}>
       <div className={styles.projectsHeader}>
         <h1 className={styles.title}><FormattedMessage id="prjects.title"/></h1>
-        <div className={styles.searchForm}>
-          <input className={styles.search} id="search" type="text" onChange={(e) => {console.log(e.target.value)}}/>
-          <label htmlFor="search">
-            <div className={styles.imgBlock}>
-              <img src={search} alt=""/>
-            </div>
-          </label>
-        </div>
       </div>
         <div className={styles.prjectsBlock}>
           {visibleWorks.map((val) => {
